@@ -33,3 +33,39 @@
 .btn-register:hover {
   background: #594b98;
 }
+
+.hero-primary {
+  color: #1f2a36;
+  font-family: "Open Sans", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.hero-secondary {
+  color: $secondary;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.hero-button {
+  border-radius: 4px;
+  background: $primary;
+  color: $text-white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .mobile-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
