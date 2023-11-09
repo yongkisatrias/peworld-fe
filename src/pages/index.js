@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </nav>
         {/* Hero Content */}
-        <section className="grid grid-cols-1 md:grid-cols-3 items-center mt-10">
+        <section className="grid grid-cols-1 md:grid-cols-3 items-center mt-20">
           <div className="col-span-1 md:col-span-2">
             <h1
               className={`${openSans.className} text-5xl font-semibold leading-[4.375rem] text-[#1F2A36]`}
@@ -63,6 +63,47 @@ export default function Home() {
         </section>
       </header>
       {/* Header end */}
+
+      {/* Section 1 */}
+      <section className="container mx-auto px-2 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="col-span-1 md:col-span-1 items-center">
+            <img
+              src="/images/homepage-image/section-1.png"
+              alt="section 1"
+              className="w-[31rem] h-[24.3655rem]"
+            />
+          </div>
+          <div className="col-span-1 md:col-span-1 items-center">
+            <h2
+              className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-[#1F2A36]`}
+            >
+              Kenapa harus mencari tallent di peworld
+            </h2>
+
+            {[
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+              "Lorem ipsum dolor sit amet.",
+            ]?.map((item, key) => (
+              <div className="flex gap-x-5 items-center py-5" key={key}>
+                <img
+                  src="/images/icon/tick-1.svg"
+                  alt="ceklis"
+                  className="w-[1.5rem] h-[1.5rem]"
+                />
+                <p
+                  className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
+                >
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Section 1 end */}
     </main>
   );
 }
