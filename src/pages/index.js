@@ -69,8 +69,8 @@ export default function Home() {
 
       {/* Section 1 */}
       <section className="container mx-auto px-2 mt-16">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="col-span-1 md:col-span-1 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className="col-span-1 md:col-span-1">
             <Image
               src="/images/homepage-image/section-1.png"
               alt="section 1"
@@ -78,7 +78,7 @@ export default function Home() {
               height={488}
             />
           </div>
-          <div className="col-span-1 md:col-span-1 items-center justify-self-end">
+          <div className="col-span-1 md:col-span-1 justify-self-end">
             <h2
               className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-[#1F2A36]`}
             >
@@ -112,8 +112,8 @@ export default function Home() {
 
       {/* Section 2 */}
       <section className="container mx-auto px-2 mt-16">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="col-span-1 md:col-span-1 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className="col-span-1 md:col-span-1">
             <h2
               className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-[#1F2A36]`}
             >
@@ -165,7 +165,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-span-1 md:col-span-1 items-center justify-self-end">
+          <div className="col-span-1 md:col-span-1 justify-self-end">
             <Image
               src="/images/homepage-image/section-2.png"
               alt="section 2"
@@ -200,10 +200,11 @@ export default function Home() {
       <footer className="bg-[#5E50A1]">
         <div className="container mx-auto px-2">
           <div className="pt-16">
-            <img
+            <Image
               src="/images/logo/peworld-white.svg"
               alt="logo peworld"
-              className="w-[11.125rem] h-[3.125rem]"
+              width={178}
+              height={50}
             />
           </div>
           <p
