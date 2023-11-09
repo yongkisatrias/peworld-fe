@@ -1,4 +1,5 @@
 import { Open_Sans } from "next/font/google";
+import Image from "next/image";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -11,10 +12,11 @@ export default function Home() {
       <header className="container mx-auto px-2">
         {/* Navbar */}
         <nav className="flex justify-between py-5 mobile-container">
-          <img
+          <Image
             src="/images/logo/peworld-main.svg"
             alt="logo"
-            className="w-[7.9375rem] h-[2.1875rem]"
+            width={127}
+            height={35}
           />
           <div className="flex gap-4">
             <button
@@ -54,10 +56,11 @@ export default function Home() {
             </button>
           </div>
           <div className="col-span-1 md:col-span-1 justify-self-end">
-            <img
+            <Image
               src="/images/homepage-image/hero-content.png"
               alt="hero-image"
-              className="w-[31.25rem] h-[31.25rem]"
+              width={617}
+              height={617}
             />
           </div>
         </section>
@@ -68,10 +71,11 @@ export default function Home() {
       <section className="container mx-auto px-2 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1 md:col-span-1 items-center">
-            <img
+            <Image
               src="/images/homepage-image/section-1.png"
               alt="section 1"
-              className="w-[31rem] h-[24.3655rem]"
+              width={568}
+              height={488}
             />
           </div>
           <div className="col-span-1 md:col-span-1 items-center justify-self-end">
@@ -88,10 +92,11 @@ export default function Home() {
               "Lorem ipsum dolor sit amet.",
             ]?.map((item, key) => (
               <div className="flex gap-x-5 items-center py-5" key={key}>
-                <img
+                <Image
                   src="/images/icon/tick-1.svg"
                   alt="ceklis"
-                  className="w-[1.5rem] h-[1.5rem]"
+                  width={24}
+                  height={24}
                 />
                 <p
                   className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
@@ -125,10 +130,11 @@ export default function Home() {
               <div>
                 {["Java", "Kotlin", "PHP", "Javascript"]?.map((item, key) => (
                   <div className="flex gap-x-5 items-center py-5" key={key}>
-                    <img
+                    <Image
                       src="/images/icon/tick-2.svg"
                       alt="ceklis"
-                      className="w-[1.5rem] h-[1.5rem]"
+                      width={24}
+                      height={24}
                     />
                     <p
                       className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
@@ -142,10 +148,11 @@ export default function Home() {
                 {["Golang", "C++", "Ruby", "10+ Bahasa Lainnya"]?.map(
                   (item, key) => (
                     <div className="flex gap-x-5 items-center py-5" key={key}>
-                      <img
+                      <Image
                         src="/images/icon/tick-2.svg"
                         alt="ceklis"
-                        className="w-[1.5rem] h-[1.5rem]"
+                        width={24}
+                        height={24}
                       />
                       <p
                         className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
@@ -159,10 +166,11 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 md:col-span-1 items-center justify-self-end">
-            <img
+            <Image
               src="/images/homepage-image/section-2.png"
-              alt="section 1"
-              className="w-[31rem] h-[24.3655rem]"
+              alt="section 2"
+              width={570}
+              height={490}
             />
           </div>
         </div>
