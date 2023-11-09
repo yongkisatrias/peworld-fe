@@ -168,6 +168,23 @@ export default function Home() {
         </div>
       </section>
       {/* Section 2 end */}
+
+      {/* CTA */}
+      <section className="container mx-auto px-2 my-24 flex justify-center">
+        <div className="flex justify-around bg-[#5E50A1] rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center">
+          <h2
+            className={`${openSans.className} text-[#fff] text-4xl font-semibold leading-10`}
+          >
+            Lorem ipsum dolor sit amet
+          </h2>
+          <button
+            className={`${openSans.className} bg-[#fff] rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
+          >
+            Mulai Dari Sekarang
+          </button>
+        </div>
+      </section>
+      {/* CTA end */}
     </main>
   );
 }
