@@ -170,12 +170,14 @@ export default function Home() {
       {/* Section 2 end */}
 
       {/* CTA */}
-      <section className="container mx-auto px-2 my-24 flex justify-center">
+      <section className="container mx-auto px-2 my-24 flex justify-center sm:w-[100%]">
         <div className="flex justify-around bg-[#5E50A1] rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center">
           <h2
             className={`${openSans.className} text-[#fff] text-4xl font-semibold leading-10`}
           >
-            Lorem ipsum dolor sit amet
+            Lorem ipsum
+            <br />
+            dolor sit amet
           </h2>
           <button
             className={`${openSans.className} bg-[#fff] rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
@@ -185,6 +187,40 @@ export default function Home() {
         </div>
       </section>
       {/* CTA end */}
+
+      {/* Footer */}
+      <footer className="bg-[#5E50A1]">
+        <div className="container mx-auto px-2">
+          <div className="pt-16">
+            <img
+              src="/images/logo/peworld-white.svg"
+              alt="logo peworld"
+              className="w-[11.125rem] h-[3.125rem]"
+            />
+          </div>
+          <p
+            className={`${openSans.className} mt-7 text-lg font-normal leading-7 text-[#fff]`}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
+            ipsum et dui rhoncus auctor.
+          </p>
+          <hr className="mt-16" />
+          <div className="flex justify-between mt-7 pb-7">
+            <p
+              className={`${openSans.className} text-lg font-normal leading-7 text-[#fff]`}
+            >
+              2023 Peworld. All right reserved
+            </p>
+            <div
+              className={`${openSans.className} text-lg font-normal leading-7 text-[#fff] flex gap-5`}
+            >
+              <a>Telepon</a>
+              <a>Email</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* Footer end */}
     </main>
   );
 }
