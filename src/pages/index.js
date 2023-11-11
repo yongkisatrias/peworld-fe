@@ -2,6 +2,8 @@ import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
 
+import Navbar from "@/components/Navbar";
+
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
@@ -15,26 +17,7 @@ export default function Home() {
       {/* Header start */}
       <header className="container mx-auto px-2">
         {/* Navbar */}
-        <nav className="flex justify-between py-5 mobile-container">
-          <Image
-            src="/images/logo/peworld-main.svg"
-            alt="logo"
-            width={127}
-            height={35}
-          />
-          <div className="flex gap-4">
-            <button
-              className={`${openSans.className} border border-[#5e50a1] rounded px-5 text-[#5e50a1] text-sm font-bold`}
-            >
-              Masuk
-            </button>
-            <button
-              className={`${openSans.className} bg-[#5e50a1] rounded px-5 text-[#fff] text-sm font-bold`}
-            >
-              Daftar
-            </button>
-          </div>
-        </nav>
+        <Navbar />
         {/* Hero Content */}
         <section className="grid grid-cols-1 md:grid-cols-2 items-center mt-20">
           <div className="col-span-1 md:col-span-1">
