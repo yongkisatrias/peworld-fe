@@ -1,5 +1,6 @@
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
+import Head from "next/head";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -8,6 +9,9 @@ const openSans = Open_Sans({
 export default function Home() {
   return (
     <main id="home-page">
+      <Head>
+        <title>Peworld | Home</title>
+      </Head>
       {/* Header start */}
       <header className="container mx-auto px-2">
         {/* Navbar */}
@@ -126,7 +130,7 @@ export default function Home() {
               euismod ipsum et dui rhoncus auctor.
             </p>
 
-            <div className="flex grid grid-cols-2 md:grid-cols-2">
+            <div className="grid grid-cols-2 md:grid-cols-2">
               <div>
                 {["Java", "Kotlin", "PHP", "Javascript"]?.map((item, key) => (
                   <div className="flex gap-x-5 items-center py-5" key={key}>
