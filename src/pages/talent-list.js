@@ -153,4 +153,11 @@ function TalentList() {
   );
 }
 
+// Merubah menjadi halaman ssr
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}
+
 export default TalentList;
