@@ -12,7 +12,8 @@ const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
-function Detail() {
+function Detail(props) {
+  console.log(props);
   return (
     <>
       <Head>
@@ -35,8 +36,12 @@ function Detail() {
 }
 
 // Merubah menjadi halaman ssr
-export async function getServerSideProps() {
-  const request = await axios.get("http://localhost:3000/api/list-talent");
+export async function getServerSideProps(props) {
+  const { id } = props.params;
+
+  const request = await axios.get(
+    `http://localhost:3000/api/list-talent?id=${id}`
+  );
 
   return {
     props: request.data,

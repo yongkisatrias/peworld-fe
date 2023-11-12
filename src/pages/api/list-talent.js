@@ -112,7 +112,15 @@ const listData = [
 ];
 
 export default function handler(req, res) {
-  res
-    .status(200)
-    .json({ status: true, message: "Get data success", data: listData });
+  if (req.query.id) {
+    res.status(200).json({
+      status: true,
+      message: "Get data success",
+      data: listData?.find((item) => item?.id === parseInt(req.query.id)),
+    });
+  } else {
+    res
+      .status(200)
+      .json({ status: true, message: "Get data success", data: listData });
+  }
 }
