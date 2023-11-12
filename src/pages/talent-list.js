@@ -13,6 +13,9 @@ const openSans = Open_Sans({
 function TalentList() {
   return (
     <main id="talent-list">
+      <Head>
+        <title>Peworld | Talent List</title>
+      </Head>
       {/* Header start */}
       <header className="container mx-auto px-2">
         {/* Navbar */}
