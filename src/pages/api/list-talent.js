@@ -3,111 +3,111 @@
 const listData = [
   {
     id: 1,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/2/22/Kazuma-anime.png/revision/latest/top-crop/width/200/height/150?cb=20180328150146",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Satou Kazuma",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 2,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/1/14/Aqua-anime.png/revision/latest/top-crop/width/200/height/150?cb=20180328145536",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Aqua",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 3,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/d/d9/Darkness-anime.png/revision/latest/top-crop/width/200/height/150?cb=20180502130740",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Darkness",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 4,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/3/3f/Megumin-anime.png/revision/latest/top-crop/width/200/height/150?cb=20180328143334",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Megumin",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 5,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/b/b3/Wolbach_Anime.jpg/revision/latest/top-crop/width/200/height/150?cb=20230405202017",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Wolbach",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 6,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/0/02/Sylvia-anime.png/revision/latest/top-crop/width/200/height/150?cb=20210319135408",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Sylvia",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 7,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/c/c0/Yunyun-anime.png/revision/latest/top-crop/width/200/height/150?cb=20180328170203",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Yunyun",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 8,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/c/cc/Eris_Anime.png/revision/latest/top-crop/width/200/height/150?cb=20210319135959",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Eris",
-    jojob: "Web Developer",
+    job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 9,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/c/cb/Wiz-anime.png/revision/latest/smart/width/371/height/332?cb=20180328171357",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Wiz",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 10,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/4/40/Beldia-anime.png/revision/latest/smart/width/371/height/332?cb=20180328175528",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Beldia",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 11,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/a/ad/Chomusuke_Anime.png/revision/latest/smart/width/371/height/332?cb=20230921104255",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Chomusuke",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
   {
     id: 12,
-    photo:
-      "https://static.wikia.nocookie.net/konosuba/images/6/69/Hans_Anime.png/revision/latest/smart/width/371/height/332?cb=20170317125327",
+    photo: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
     fullname: "Hans",
     job: "Web Developer",
     location: "Tangerang",
     skills: ["HTML", "CSS", "JavaScript"],
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat orci, mollis nec gravida sed, ornare quis urna. Curabitur eu lacus fringilla, vestibulum risus at.",
   },
 ];
 
