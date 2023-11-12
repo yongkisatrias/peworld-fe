@@ -1,6 +1,7 @@
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,6 +11,7 @@ const openSans = Open_Sans({
 });
 
 export default function Home() {
+  const router = useRouter();
   return (
     <main id="home-page">
       <Head>
@@ -34,11 +36,13 @@ export default function Home() {
             <p
               className={`${openSans.className} text-lg font-normal leading-7 text-[#46505C] mt-5`}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              euismod ipsum et dui rhoncus auctor.
+              Dengan fitur pencarian canggih, kesempatan karier tak terbatas,
+              dan jaringan yang luas, kami membawa Anda menuju masa depan kerja
+              yang lebih baik. Daftar sekarang!
             </p>
             <button
               className={`${openSans.className} bg-[#5E50A1] rounded px-6 py-5 text-[#fff] text-base font-bold mt-10`}
+              onClick={() => router.push(`/talent-list/`)}
             >
               Mulai Dari Sekarang
             </button>
@@ -74,10 +78,10 @@ export default function Home() {
             </h2>
 
             {[
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
-              "Lorem ipsum dolor sit amet.",
+              "Temukan talenta terbaik dengan cepat.",
+              "Memastikan antara kebutuhan perusahaan dan keterampilan unik para kandidat.",
+              "Gambaran lengkap tentang kandidat dengan portofolio interaktif mereka.",
+              "Prioritaskan keamanan data kandidat dan perusahaan dengan sistem keamanan tinggi.",
             ]?.map((item, key) => (
               <div className="flex gap-x-5 items-center py-5" key={key}>
                 <Image
@@ -110,8 +114,8 @@ export default function Home() {
             <p
               className={`${openSans.className} text-lg font-normal leading-7 text-[#46505C]`}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              euismod ipsum et dui rhoncus auctor.
+              Talent kami memiliki talent yang sangat dibutuhkan oleh
+              perusahaan, diantaranya adalah
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-2">
@@ -167,13 +171,13 @@ export default function Home() {
 
       {/* CTA */}
       <section className="container mx-auto px-2 my-24 flex justify-center sm:w-[100%]">
-        <div className="flex justify-around bg-[#5E50A1] rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center">
+        <div className="flex justify-around flex-wrap bg-[#5E50A1] rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center">
           <h2
             className={`${openSans.className} text-[#fff] text-4xl font-semibold leading-10`}
           >
-            Lorem ipsum
+            Tunggu apalagi?
             <br />
-            dolor sit amet
+            Mari bergabung!
           </h2>
           <button
             className={`${openSans.className} bg-[#fff] rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
