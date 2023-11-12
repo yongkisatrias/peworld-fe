@@ -72,7 +72,7 @@ function TalentList(props) {
                 className="grid grid-cols-1 md:grid-cols-6 gap-10 py-10 border-b-2"
                 key={key}
               >
-                <div className="col-span-5 flex gap-5">
+                <div className="md:col-span-5 col-span-1 flex gap-5">
                   <img
                     src={item?.photo}
                     width={100}
@@ -117,7 +117,7 @@ function TalentList(props) {
                   </div>
                 </div>
                 <button
-                  className={`${openSans.className} col-span-1 bg-[#5E50A1] rounded text-[#fff] text-base font-semibold leading-5 mr-10 my-7`}
+                  className={`${openSans.className} md:col-span-1 col-span-1 bg-[#5E50A1] rounded text-[#fff] text-base font-semibold leading-5 my-7 py-2`}
                   onClick={() => router.push(`/talent-list/detail/${item?.id}`)}
                 >
                   Lihat Profile
