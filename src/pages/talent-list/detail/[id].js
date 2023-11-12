@@ -14,7 +14,7 @@ const openSans = Open_Sans({
 
 function Detail() {
   return (
-    <main>
+    <>
       <Head>
         <title>Peworld | Top Talent</title>
       </Head>
@@ -24,7 +24,11 @@ function Detail() {
         <Navbar />
       </header>
       {/* Header end */}
-    </main>
+
+      {/* Footer */}
+      <Footer />
+      {/* Footer end */}
+    </>
   );
 }
 
