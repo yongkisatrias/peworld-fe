@@ -100,7 +100,7 @@ function TalentList(props) {
                       </p>
                     </div>
                     {/* Skill */}
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {item?.skills.map((item, key) => (
                         <div
                           className={`bg-[#fed417] rounded border-[#FBB017] border-2 px-3 py-1 mt-1`}

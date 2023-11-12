@@ -17,7 +17,7 @@ function Detail(props) {
   return (
     <>
       <Head>
-        <title>Peworld | Top Talent</title>
+        <title>Peworld | Profile</title>
       </Head>
       {/* Header start */}
       <header className="container mx-auto">
@@ -26,6 +26,7 @@ function Detail(props) {
       </header>
       {/* Header end */}
 
+      {/* Main Section */}
       <main className="bg-[#F6F7F8] py-8">
         <div className="container mx-auto px-2">
           <div className="bg-[#fff] drop-shadow-lg rounded-t-lg">
@@ -39,7 +40,7 @@ function Detail(props) {
                 className="rounded-full"
               />
             </div>
-            <div className="px-2">
+            <div className="px-5">
               <h1
                 className={`flex justify-center ${openSans.className} text-[#1F2A36] text-2xl font-semibold leading-10 my-2`}
               >
@@ -59,7 +60,7 @@ function Detail(props) {
                 </p>
               </div>
               <p
-                className={`flex justify-center ${openSans.className} text-[#9EA0A5] text-sm font-normal leading-6 my-2`}
+                className={`flex justify-center ${openSans.className} text-[#9EA0A5] text-sm font-normal leading-6 my-2 text-center`}
               >
                 {data?.desc}
               </p>
@@ -91,6 +92,7 @@ function Detail(props) {
           </div>
         </div>
       </main>
+      {/* Main Section end */}
 
       {/* Footer */}
       <Footer />
