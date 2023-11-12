@@ -34,4 +34,13 @@ function Detail() {
   );
 }
 
+// Merubah menjadi halaman ssr
+export async function getServerSideProps() {
+  const request = await axios.get("http://localhost:3000/api/list-talent");
+
+  return {
+    props: request.data,
+  };
+}
+
 export default Detail;
