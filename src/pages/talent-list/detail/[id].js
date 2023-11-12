@@ -19,11 +19,13 @@ function Detail() {
         <title>Peworld | Top Talent</title>
       </Head>
       {/* Header start */}
-      <header className="container mx-auto px-2">
+      <header className="container mx-auto">
         {/* Navbar */}
         <Navbar />
       </header>
       {/* Header end */}
+
+      <main></main>
 
       {/* Footer */}
       <Footer />

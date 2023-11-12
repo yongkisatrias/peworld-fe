@@ -9,7 +9,7 @@ const openSans = Open_Sans({
 function Navbar() {
   return (
     <>
-      <nav className="flex justify-between py-5 mobile-container">
+      <nav className="flex justify-between py-5 px-2">
         <Image
           src="/images/logo/peworld-main.svg"
           alt="logo"

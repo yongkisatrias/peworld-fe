@@ -29,12 +29,12 @@ function TalentList(props) {
   };
 
   return (
-    <main id="talent-list">
+    <>
       <Head>
         <title>Peworld | Talent List</title>
       </Head>
       {/* Header start */}
-      <header className="container mx-auto px-2">
+      <header className="container mx-auto">
         {/* Navbar */}
         <Navbar />
       </header>
@@ -53,7 +53,7 @@ function TalentList(props) {
       {/* Sub Header end */}
 
       {/* Main Section */}
-      <section className="bg-[#F6F7F8] py-8">
+      <main className="bg-[#F6F7F8] py-8">
         <div className="container mx-auto px-2">
           {/* Search Bar */}
           <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] flex justify-between p-4 rounded-lg gap-4">
@@ -168,13 +168,13 @@ function TalentList(props) {
           </button>
         </div>
         {/* Pagination end */}
-      </section>
+      </main>
       {/* Main Section end */}
 
       {/* Footer */}
       <Footer />
       {/* Footer end */}
-    </main>
+    </>
   );
 }
 
