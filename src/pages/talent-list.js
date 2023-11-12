@@ -5,12 +5,27 @@ import Head from "next/head";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import axios from "axios";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
-function TalentList() {
+function TalentList(props) {
+  const [listData, setListData] = React.useState(props?.data?.slice(0, 4));
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const countData = Math.round(props?.data?.length / 4);
+
+  const handlePagination = (nextPage) => {
+    setCurrentPage(nextPage);
+
+    if (nextPage > 1) {
+      setListData(props?.data?.slice(4 * (nextPage - 1), 4 * nextPage));
+    } else {
+      setListData(props?.data?.slice(0, 4));
+    }
+  };
+
   return (
     <main id="talent-list">
       <Head>
@@ -50,14 +65,14 @@ function TalentList() {
           {/* Content */}
           <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] rounded-lg mt-8 px-5">
             {/* Talent List */}
-            {[...new Array(4)].map((item, key) => (
+            {listData.map((item, key) => (
               <div
                 className="grid grid-cols-1 md:grid-cols-6 gap-10 py-10 border-b-2"
                 key={key}
               >
                 <div className="col-span-5 flex gap-5">
                   <img
-                    src={"https://i.pravatar.cc/300"}
+                    src={item?.photo}
                     width={100}
                     height={100}
                     alt="profile picture"
@@ -67,24 +82,24 @@ function TalentList() {
                     <h4
                       className={`${openSans.className} text-[#1F2A36] text-xl font-semibold`}
                     >
-                      Louis Tomlinson
+                      {item?.fullname}
                     </h4>
                     <p
                       className={`${openSans.className} text-[#9EA0A5] text-sm font-normal mt-1`}
                     >
-                      Web developer
+                      {item?.job}
                     </p>
                     <div className="flex gap-1 mt-1">
                       <img src="/images/icon/map-pin.svg" />
                       <p
                         className={`${openSans.className} text-[#9EA0A5] text-sm font-normal`}
                       >
-                        Lorem ipsum
+                        {item?.location}
                       </p>
                     </div>
                     {/* Skill */}
                     <div className="flex gap-2">
-                      {["PHP", "JavaScript", "HTML"].map((item, key) => (
+                      {item?.skills.map((item, key) => (
                         <div
                           className={`bg-[#fed417] rounded border-[#FBB017] border-2 px-3 py-1 mt-1`}
                           key={key}
@@ -121,16 +136,23 @@ function TalentList() {
             />
           </button>
           {/* List */}
-          {[...new Array(6)].map((item, key) => (
-            <button
-              className={`${openSans.className} border-2 rounded p-2 ${
-                key === 0 ? "bg-[#5E50A1] text-[#fff]" : "bg-[#fff]"
-              }`}
-              key={key}
-            >
-              <p className="w-[25px] h-[25px]">{++key}</p>
-            </button>
-          ))}
+          {[...new Array(countData)].map((item, key) => {
+            const increment = ++key;
+
+            return (
+              <button
+                className={`${openSans.className} border-2 rounded p-2 ${
+                  increment === currentPage
+                    ? "bg-[#5E50A1] text-[#fff]"
+                    : "bg-[#fff]"
+                }`}
+                key={increment}
+                onClick={() => handlePagination(increment)}
+              >
+                <p className="w-[25px] h-[25px]">{increment}</p>
+              </button>
+            );
+          })}
 
           {/* Next */}
           <button className="bg-[#fff] border-2 rounded p-2">
@@ -155,8 +177,10 @@ function TalentList() {
 
 // Merubah menjadi halaman ssr
 export async function getServerSideProps() {
+  const request = await axios.get("http://localhost:3000/api/list-talent");
+
   return {
-    props: {},
+    props: request.data,
   };
 }
 
