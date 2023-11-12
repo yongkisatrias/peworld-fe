@@ -106,6 +106,40 @@ function TalentList() {
           </div>
           {/* Content end */}
         </div>
+        {/* Pagination */}
+        <div className="flex justify-center gap-2 mt-8">
+          {/* Previous */}
+          <button className="bg-[#fff] border-2 rounded p-2">
+            <img
+              src="images/icon/prev.svg"
+              alt="previous"
+              width={25}
+              height={25}
+            />
+          </button>
+          {/* List */}
+          {[...new Array(6)].map((item, key) => (
+            <button
+              className={`${openSans.className} border-2 rounded p-2 ${
+                key === 0 ? "bg-[#5E50A1] text-[#fff]" : "bg-[#fff]"
+              }`}
+              key={key}
+            >
+              <p className="w-[25px] h-[25px]">{++key}</p>
+            </button>
+          ))}
+
+          {/* Next */}
+          <button className="bg-[#fff] border-2 rounded p-2">
+            <img
+              src="images/icon/next.svg"
+              alt="previous"
+              width={25}
+              height={25}
+            />
+          </button>
+        </div>
+        {/* Pagination end */}
       </section>
       {/* Main Section end */}
 
