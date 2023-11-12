@@ -114,8 +114,8 @@ export default function Home() {
             <p
               className={`${openSans.className} text-lg font-normal leading-7 text-[#46505C]`}
             >
-              Talent kami memiliki talent yang sangat dibutuhkan oleh
-              perusahaan, diantaranya adalah
+              Talent kami memiliki skill yang sangat dibutuhkan oleh perusahaan,
+              diantaranya adalah
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-2">
