@@ -2,16 +2,18 @@ import React from "react";
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
+import axios from "axios";
+import { useRouter } from "next/router";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import axios from "axios";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
 function TalentList(props) {
+  const router = useRouter();
   const [listData, setListData] = React.useState(props?.data?.slice(0, 4));
   const [currentPage, setCurrentPage] = React.useState(1);
   const countData = Math.round(props?.data?.length / 4);
@@ -116,6 +118,7 @@ function TalentList(props) {
                 </div>
                 <button
                   className={`${openSans.className} col-span-1 bg-[#5E50A1] rounded text-[#fff] text-base font-semibold leading-5 mr-10 my-7`}
+                  onClick={() => router.push(`/talent-list/detail/${item?.id}`)}
                 >
                   Lihat Profile
                 </button>
