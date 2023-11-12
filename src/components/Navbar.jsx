@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { Open_Sans } from "next/font/google";
+import { useRouter } from "next/router";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
 function Navbar() {
+  const router = useRouter();
   return (
     <>
       <nav className="flex justify-between py-5 px-2">
@@ -15,6 +17,8 @@ function Navbar() {
           alt="logo"
           width={127}
           height={35}
+          onClick={() => router.push(`/`)}
+          className="cursor-pointer"
         />
         <div className="flex gap-4">
           <button
