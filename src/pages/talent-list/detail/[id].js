@@ -29,8 +29,8 @@ function Detail(props) {
       {/* Main Section */}
       <main className="bg-[#F6F7F8] py-8">
         <div className="container mx-auto px-2">
-          <div className="bg-[#fff] drop-shadow-lg rounded-t-lg">
-            <div className="bg-[#5E50A1] h-[200px] rounded-t-lg" />
+          <div className="bg-white drop-shadow-lg rounded-t-lg">
+            <div className="bg-primary h-[200px] rounded-t-lg" />
             <div className="flex justify-center mt-[-80px]">
               <img
                 src={data?.photo}
@@ -68,7 +68,7 @@ function Detail(props) {
               </div>
               <div className="flex justify-center my-5">
                 <button
-                  className={`bg-[#5E50A1] rounded px-20 py-2 ${openSans.className} text-[#fff] text-base font-bold leading-5`}
+                  className={`bg-primary rounded px-20 py-2 ${openSans.className} text-[#fff] text-base font-bold leading-5`}
                 >
                   Hire
                 </button>

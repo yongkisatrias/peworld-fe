@@ -9,7 +9,7 @@ const openSans = Open_Sans({
 function Footer() {
   return (
     <>
-      <footer className="bg-[#5E50A1]">
+      <footer className="bg-primary">
         <div className="container mx-auto px-2">
           <div className="pt-16">
             <Image

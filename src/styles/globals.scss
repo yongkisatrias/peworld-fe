@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 @import "./index.scss";
+@import "./variables.scss";
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-white {
+  background-color: $white;
+}

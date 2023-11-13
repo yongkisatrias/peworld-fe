@@ -43,7 +43,7 @@ function TalentList(props) {
       {/* Header end */}
 
       {/* Sub Header */}
-      <section className="bg-[#5E50A1]">
+      <section className="bg-primary">
         <div className="container mx-auto px-2">
           <h1
             className={`${openSans.className} text-2xl font-bold leading-5 text-[#fff] py-5`}
@@ -58,20 +58,20 @@ function TalentList(props) {
       <main className="bg-[#F6F7F8] py-8">
         <div className="container mx-auto px-2">
           {/* Search Bar */}
-          <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] flex justify-between p-4 rounded-lg gap-4">
+          <div className="bg-white drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] flex justify-between p-4 rounded-lg gap-4">
             <input
               placeholder="Search for any skill or name"
               className="w-full"
               onChange={(item) => setSearchBar(item.target.value)}
             />
             <button
-              className={`${openSans.className} bg-[#5E50A1] rounded px-5 py-2 text-[#fff] text-base font-semibold leading-5`}
+              className={`${openSans.className} bg-primary rounded px-5 py-2 text-[#fff] text-base font-semibold leading-5`}
             >
               Search
             </button>
           </div>
           {/* Content */}
-          <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] rounded-lg mt-8 px-5">
+          <div className="bg-white drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] rounded-lg mt-8 px-5">
             {/* Talent List */}
             {allTalents
               .filter(
@@ -134,7 +134,7 @@ function TalentList(props) {
                     </div>
                   </div>
                   <button
-                    className={`${openSans.className} md:col-span-1 col-span-1 bg-[#5E50A1] rounded text-[#fff] text-base font-semibold leading-5 my-7 py-2`}
+                    className={`${openSans.className} md:col-span-1 col-span-1 bg-primary rounded text-[#fff] text-base font-semibold leading-5 my-7 py-2`}
                     onClick={() =>
                       router.push(`/talent-list/detail/${item?.id}`)
                     }
@@ -149,7 +149,7 @@ function TalentList(props) {
         {/* Pagination */}
         <div className="flex justify-center gap-2 mt-8">
           {/* Previous */}
-          <button className="bg-[#fff] border-2 rounded p-2">
+          <button className="bg-white border-2 rounded p-2">
             <img
               src="images/icon/prev.svg"
               alt="previous"
@@ -165,8 +165,8 @@ function TalentList(props) {
               <button
                 className={`${openSans.className} border-2 rounded p-2 ${
                   increment === currentPage
-                    ? "bg-[#5E50A1] text-[#fff]"
-                    : "bg-[#fff]"
+                    ? "bg-primary text-[#fff]"
+                    : "bg-white"
                 }`}
                 key={increment}
                 onClick={() => handlePagination(increment)}
@@ -177,7 +177,7 @@ function TalentList(props) {
           })}
 
           {/* Next */}
-          <button className="bg-[#fff] border-2 rounded p-2">
+          <button className="bg-white border-2 rounded p-2">
             <img
               src="images/icon/next.svg"
               alt="previous"

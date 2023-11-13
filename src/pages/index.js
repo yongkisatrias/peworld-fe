@@ -37,7 +37,7 @@ export default function Home() {
               yang lebih baik. Daftar sekarang!
             </p>
             <button
-              className={`${openSans.className} bg-[#5E50A1] rounded px-6 py-5 text-[#fff] text-base font-bold mt-10`}
+              className={`${openSans.className} bg-primary rounded px-6 py-5 text-[#fff] text-base font-bold mt-10`}
               onClick={() => router.push(`/talent-list/`)}
             >
               Mulai Dari Sekarang
@@ -167,7 +167,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="container mx-auto px-2 my-24 flex justify-center sm:w-[100%]">
-        <div className="flex justify-around flex-wrap bg-[#5E50A1] rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center">
+        <div className="flex justify-around flex-wrap bg-primary rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center">
           <h2
             className={`${openSans.className} text-[#fff] text-4xl font-semibold leading-10`}
           >
@@ -176,7 +176,7 @@ export default function Home() {
             Mari bergabung!
           </h2>
           <button
-            className={`${openSans.className} bg-[#fff] rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
+            className={`${openSans.className} bg-white rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
           >
             Mulai Dari Sekarang
           </button>
