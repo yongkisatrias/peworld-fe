@@ -109,7 +109,12 @@ function TalentList(props) {
                         {item?.job}
                       </p>
                       <div className="flex gap-1 mt-1">
-                        <img src="/images/icon/map-pin.svg" />
+                        <Image
+                          src="/images/icon/map-pin.svg"
+                          alt="location"
+                          width={16}
+                          height={16}
+                        />
                         <p
                           className={`${openSans.className} text-[#9EA0A5] text-sm font-normal`}
                         >
@@ -150,7 +155,7 @@ function TalentList(props) {
         <div className="flex justify-center gap-2 mt-8">
           {/* Previous */}
           <button className="bg-white border-2 rounded p-2">
-            <img
+            <Image
               src="images/icon/prev.svg"
               alt="previous"
               width={25}
@@ -178,7 +183,7 @@ function TalentList(props) {
 
           {/* Next */}
           <button className="bg-white border-2 rounded p-2">
-            <img
+            <Image
               src="images/icon/next.svg"
               alt="previous"
               width={25}
