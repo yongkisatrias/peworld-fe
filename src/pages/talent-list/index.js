@@ -14,7 +14,7 @@ const openSans = Open_Sans({
 
 function TalentList(props) {
   const router = useRouter();
-  const [setListData] = React.useState(props?.data?.slice(0, 4));
+  const [listData, setListData] = React.useState(props?.data?.slice(0, 4));
   const [currentPage, setCurrentPage] = React.useState(1);
   const countData = Math.round(props?.data?.length / 4);
   const [searchBar, setSearchBar] = React.useState("");
