@@ -9,7 +9,7 @@ const listData = [
     job: "Web Developer",
     location: "Bandung",
     skills: ["HTML", "CSS", "Javascript"],
-    desc: "Passionate and detail-oriented Web Developer with a solid foundation in front-end and back-end technologies. Proficient in translating design concepts into fully functional websites, ensuring a seamless user experience. Adept at collaborating with cross-functional teams to drive project success. Demonstrated expertise in HTML, CSS, JavaScript, and proficiency in popular frameworks such as React and Node.js. Proven ability to troubleshoot and optimize code for improved site performance. Committed to staying updated on industry trends and continuously enhancing skills to deliver innovative and high-quality web solutions. Eager to contribute technical proficiency and creative problem-solving skills to a dynamic development team.",
+    desc: "Pengembang Web yang bersemangat dan berorientasi pada detail dengan dasar yang kuat dalam teknologi front-end dan back-end. Mahir dalam menerjemahkan konsep desain ke situs web yang berfungsi penuh, memastikan pengalaman pengguna yang lancar. Mahir berkolaborasi dengan tim lintas fungsi untuk mendorong keberhasilan proyek. Menunjukkan keahlian dalam HTML, CSS, JavaScript, dan kemahiran dalam kerangka kerja populer seperti React dan Node.js. Kemampuan yang terbukti untuk memecahkan masalah dan mengoptimalkan kode untuk meningkatkan kinerja situs. Berkomitmen untuk terus mengikuti perkembangan tren industri dan terus meningkatkan keterampilan untuk memberikan solusi web yang inovatif dan berkualitas tinggi. Bersemangat untuk menyumbangkan kemahiran teknis dan keterampilan pemecahan masalah yang kreatif kepada tim pengembangan yang dinamis.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const listData = [
     job: "Front End Developer",
     location: "Yogyakarta",
     skills: ["Javascript", "React.js", "next.js"],
-    desc: "Experienced and detail-oriented Front-End Developer with a passion for crafting visually appealing and user-friendly interfaces. Proficient in HTML, CSS, and JavaScript, with a strong foundation in responsive web design and cross-browser compatibility. Adept at collaborating with cross-functional teams to bring design concepts to life and enhance overall user experience. Skilled in utilizing modern front-end frameworks and libraries, such as React.js, to create dynamic and interactive web applications. Continuously staying updated with emerging trends and technologies in the ever-evolving landscape of front-end development.",
+    desc: "Pengembang Front-End yang berpengalaman dan berorientasi pada detail dengan hasrat untuk menciptakan antarmuka yang menarik secara visual dan ramah pengguna. Mahir dalam HTML, CSS, dan JavaScript, dengan dasar yang kuat dalam desain web responsif dan kompatibilitas lintas-browser. Mahir berkolaborasi dengan tim lintas fungsi untuk mewujudkan konsep desain dan meningkatkan pengalaman pengguna secara keseluruhan. Terampil dalam memanfaatkan kerangka kerja dan perpustakaan front-end modern, seperti React.js, untuk membuat aplikasi web yang dinamis dan interaktif. Terus mengikuti perkembangan tren dan teknologi yang muncul dalam lanskap pengembangan front-end yang terus berkembang.",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const listData = [
     job: "Back End Developer",
     location: "Padang",
     skills: ["Java", "Python", "PHP"],
-    desc: "Experienced and detail-oriented Back-End Developer with a passion for crafting robust and scalable solutions. Proficient in designing, implementing, testing, and maintaining server-side applications and databases. Adept at collaborating with cross-functional teams to drive project success. Skilled in utilizing a variety of programming languages, frameworks, and databases to deliver high-quality, efficient, and secure code. Committed to staying current with emerging technologies and industry trends to enhance project performance. Proven ability to analyze user requirements and transform them into reliable and efficient software solutions.",
+    desc: "Pengembang Back-End yang berpengalaman dan berorientasi pada detail dengan hasrat untuk menciptakan solusi yang kuat dan terukur. Mahir dalam merancang, mengimplementasikan, menguji, dan memelihara aplikasi dan database sisi server. Mahir berkolaborasi dengan tim lintas fungsi untuk mendorong keberhasilan proyek. Terampil dalam memanfaatkan berbagai bahasa pemrograman, kerangka kerja, dan database untuk menghasilkan kode berkualitas tinggi, efisien, dan aman. Berkomitmen untuk selalu mengikuti perkembangan teknologi dan tren industri untuk meningkatkan kinerja proyek. Kemampuan yang terbukti untuk menganalisis kebutuhan pengguna dan mengubahnya menjadi solusi perangkat lunak yang andal dan efisien.",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const listData = [
     job: "Android Developer",
     location: "Batam",
     skills: ["Java", "Kotlin"],
-    desc: "Results-driven Android Developer with 3 years of experience in designing, implementing, testing, and maintaining innovative mobile applications. Adept at collaborating with cross-functional teams to analyze user requirements and deliver high-quality software solutions. Proven expertise in Java and Kotlin programming languages, along with a deep understanding of Android SDK, UI/UX design principles, and mobile development best practices.",
+    desc: "Pengembang Android yang berorientasi pada hasil dengan pengalaman 3 tahun dalam merancang, mengimplementasikan, menguji, dan memelihara aplikasi seluler inovatif. Mahir berkolaborasi dengan tim lintas fungsi untuk menganalisis kebutuhan pengguna dan memberikan solusi perangkat lunak berkualitas tinggi. Keahlian yang terbukti dalam bahasa pemrograman Java dan Kotlin, serta pemahaman mendalam tentang Android SDK, prinsip desain UI/UX, dan praktik terbaik pengembangan seluler.",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const listData = [
     job: "iOS Developer",
     location: "Makassar",
     skills: ["Swift", "Objective-C"],
-    desc: "Dedicated and skilled iOS developer with a proven track record of creating dynamic and innovative mobile applications. Proficient in Swift and Objective-C, with a deep understanding of the iOS SDK. Adept at collaborating with cross-functional teams to define, design, and ship new features. Experienced in the full mobile development lifecycle, from concept to deployment.",
+    desc: "Pengembang iOS yang berdedikasi dan terampil dengan rekam jejak yang terbukti dalam menciptakan aplikasi seluler yang dinamis dan inovatif. Mahir dalam Swift dan Objective-C, dengan pemahaman mendalam tentang iOS SDK. Mahir berkolaborasi dengan tim lintas fungsi untuk menentukan, merancang, dan mengirimkan fitur baru. Berpengalaman dalam siklus hidup pengembangan seluler penuh, mulai dari konsep hingga penerapan.",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const listData = [
     job: "Game Developer",
     location: "Malang",
     skills: ["C++", "C#"],
-    desc: "Enthusiastic and highly skilled Game Developer with a passion for creating immersive and engaging gaming experiences. Proven track record of successfully delivering high-quality games from concept to release, utilizing strong technical skills and creative problem-solving. Proficient in a variety of programming languages and game development tools, with a deep understanding of game design principles. Adept at collaborating with cross-functional teams to bring innovative ideas to life and achieve project milestones. Committed to staying abreast of industry trends and technologies to consistently deliver cutting-edge gaming experiences.",
+    desc: "Pengembang Game yang antusias dan berketerampilan tinggi dengan hasrat untuk menciptakan pengalaman bermain game yang mendalam dan menarik. Rekam jejak yang terbukti berhasil menghadirkan game berkualitas tinggi mulai dari konsep hingga rilis, memanfaatkan keterampilan teknis yang kuat dan pemecahan masalah yang kreatif. Mahir dalam berbagai bahasa pemrograman dan alat pengembangan game, dengan pemahaman mendalam tentang prinsip-prinsip desain game. Mahir berkolaborasi dengan tim lintas fungsi untuk mewujudkan ide-ide inovatif dan mencapai pencapaian proyek. Berkomitmen untuk terus mengikuti tren dan teknologi industri untuk secara konsisten menghadirkan pengalaman bermain game mutakhir.",
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ const listData = [
     job: "Data Scientist",
     location: "Manado",
     skills: ["Python", "R", "SQL"],
-    desc: "Results-driven and highly skilled Data Scientist with a proven track record of leveraging advanced analytics and machine learning to extract valuable insights from complex datasets. Possessing a solid foundation in statistical analysis and programming, I excel in transforming raw data into actionable business strategies. With a keen eye for detail and a passion for innovation, I have successfully implemented predictive models and data-driven solutions that have contributed to enhanced decision-making processes. Experienced in utilizing a diverse range of tools and languages, including Python, R, and SQL, I am adept at designing and implementing end-to-end data pipelines. My ability to communicate complex technical concepts to non-technical stakeholders, coupled with a commitment to continuous learning, positions me as a valuable asset in driving data-driven initiatives within organizations.",
+    desc: "Ilmuwan Data yang berorientasi pada hasil dan sangat terampil dengan rekam jejak yang terbukti dalam memanfaatkan analitik tingkat lanjut dan pembelajaran mesin untuk mengekstraksi wawasan berharga dari kumpulan data yang kompleks. Memiliki dasar yang kuat dalam analisis statistik dan pemrograman, saya unggul dalam mengubah data mentah menjadi strategi bisnis yang dapat ditindaklanjuti. Dengan ketelitian terhadap detail dan hasrat terhadap inovasi, saya telah berhasil menerapkan model prediktif dan solusi berbasis data yang berkontribusi pada peningkatan proses pengambilan keputusan. Berpengalaman dalam memanfaatkan beragam alat dan bahasa, termasuk Python, R, dan SQL, saya mahir merancang dan mengimplementasikan saluran data ujung ke ujung. Kemampuan saya untuk mengkomunikasikan konsep teknis yang kompleks kepada pemangku kepentingan non-teknis, ditambah dengan komitmen terhadap pembelajaran berkelanjutan, menempatkan saya sebagai aset berharga dalam mendorong inisiatif berbasis data dalam organisasi.",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const listData = [
       "Adobe Illustrator",
       "MockFlow",
     ],
-    desc: "Passionate and detail-oriented UI/UX Designer with a proven track record of creating engaging and intuitive digital experiences. Adept at blending creativity with functionality to deliver visually appealing and user-friendly designs. Skilled in conducting user research, wireframing, prototyping, and collaborating with cross-functional teams to bring concepts to life. Proficient in industry-standard design tools and committed to staying abreast of emerging design trends. Excels in translating complex ideas into seamless, user-centric interfaces. Eager to contribute expertise in enhancing user experiences for innovative projects.",
+    desc: "Desainer UI/UX yang penuh gairah dan berorientasi pada detail dengan rekam jejak yang terbukti dalam menciptakan pengalaman digital yang menarik dan intuitif. Mahir dalam memadukan kreativitas dengan fungsionalitas untuk menghasilkan desain yang menarik secara visual dan ramah pengguna. Terampil dalam melakukan riset pengguna, wireframing, pembuatan prototipe, dan berkolaborasi dengan tim lintas fungsi untuk mewujudkan konsep. Mahir dalam alat desain standar industri dan berkomitmen untuk selalu mengikuti tren desain yang sedang berkembang. Unggul dalam menerjemahkan ide-ide kompleks menjadi antarmuka yang mulus dan berpusat pada pengguna. Bersemangat untuk menyumbangkan keahlian dalam meningkatkan pengalaman pengguna untuk proyek-proyek inovatif.",
   },
   {
     id: 9,
@@ -95,7 +95,7 @@ const listData = [
     job: "Software Developer",
     location: "Balikpapan",
     skills: ["Java", "Python", "JavaScript", "Git", "Scrum", "Selenium"],
-    desc: "Experienced and results-driven Software Developer with a strong background in designing, implementing, testing, and maintaining innovative software solutions. Proficient in various programming languages and frameworks, with a keen ability to adapt to emerging technologies. Adept at collaborating with cross-functional teams to analyze user needs and deliver high-quality software applications. Proven track record of successfully translating business requirements into technical solutions. Passionate about staying abreast of industry trends and continuously enhancing skills to drive project success.",
+    desc: "Pengembang Perangkat Lunak yang berpengalaman dan berorientasi pada hasil dengan latar belakang yang kuat dalam merancang, menerapkan, menguji, dan memelihara solusi perangkat lunak inovatif. Mahir dalam berbagai bahasa pemrograman dan kerangka kerja, dengan kemampuan tajam untuk beradaptasi dengan teknologi baru. Mahir berkolaborasi dengan tim lintas fungsi untuk menganalisis kebutuhan pengguna dan menghadirkan aplikasi perangkat lunak berkualitas tinggi. Rekam jejak yang terbukti berhasil menerjemahkan kebutuhan bisnis menjadi solusi teknis. Bersemangat untuk mengikuti tren industri dan terus meningkatkan keterampilan untuk mendorong keberhasilan proyek.",
   },
   {
     id: 10,
@@ -105,7 +105,7 @@ const listData = [
     job: "Mobile App Developer",
     location: "Surakarta",
     skills: ["Swift", "Kotlin", "Flutter "],
-    desc: "Results-oriented Mobile App Developer with 5 years of experience in designing, developing, and maintaining cutting-edge mobile applications for iOS and Android platforms. Proficient in both native and cross-platform development, utilizing a diverse set of technologies and frameworks.",
+    desc: "Pengembang Aplikasi Seluler yang berorientasi pada hasil dengan pengalaman 5 tahun dalam merancang, mengembangkan, dan memelihara aplikasi seluler mutakhir untuk platform iOS dan Android. Mahir dalam pengembangan asli dan lintas platform, memanfaatkan beragam teknologi dan kerangka kerja.",
   },
   {
     id: 11,
@@ -115,7 +115,7 @@ const listData = [
     job: "Machine Learning Engineer",
     location: "Bogor",
     skills: ["Python ", "TensorFlow", "PyTorch"],
-    desc: "Results-driven Machine Learning Engineer with a proven track record of developing and implementing innovative machine learning solutions to solve complex problems. Proficient in designing and deploying scalable models, leveraging a strong background in mathematics, statistics, and programming. Adept at utilizing a variety of machine learning algorithms and frameworks to extract meaningful insights from data. Experienced in collaborating with cross-functional teams to deliver solutions that align with business objectives. Passionate about staying current with emerging trends in artificial intelligence and continuously enhancing skills through ongoing learning.",
+    desc: "Insinyur Pembelajaran Mesin yang berorientasi pada hasil dengan rekam jejak yang terbukti dalam mengembangkan dan menerapkan solusi pembelajaran mesin inovatif untuk memecahkan masalah yang kompleks. Mahir dalam merancang dan menerapkan model yang dapat diskalakan, memanfaatkan latar belakang yang kuat dalam matematika, statistik, dan pemrograman. Mahir dalam memanfaatkan berbagai algoritme dan kerangka kerja pembelajaran mesin untuk mengekstrak wawasan bermakna dari data. Berpengalaman berkolaborasi dengan tim lintas fungsi untuk memberikan solusi yang selaras dengan tujuan bisnis. Bersemangat untuk mengikuti perkembangan tren kecerdasan buatan dan terus meningkatkan keterampilan melalui pembelajaran berkelanjutan.",
   },
   {
     id: 12,
@@ -125,7 +125,7 @@ const listData = [
     job: "Artificial Intelligence Engineer",
     location: "Ende",
     skills: ["Python", "PyTorch", "TensorFlow"],
-    desc: "Dedicated and results-oriented AI Engineer with a strong background in machine learning and artificial intelligence. Proficient in developing and implementing cutting-edge algorithms to solve complex problems. Experienced in the entire AI project lifecycle, from problem definition and data collection to model training and deployment. Adept at utilizing a variety of programming languages and frameworks, including Python, TensorFlow, and PyTorch. Demonstrated ability to collaborate with cross-functional teams to deliver innovative solutions that meet business objectives. Proven track record in designing and implementing scalable and efficient AI systems. Eager to contribute technical expertise and passion for AI to drive advancements in technology.",
+    desc: "Insinyur AI yang berdedikasi dan berorientasi pada hasil dengan latar belakang yang kuat dalam pembelajaran mesin dan kecerdasan buatan. Mahir dalam mengembangkan dan menerapkan algoritma mutakhir untuk memecahkan masalah yang kompleks. Berpengalaman di seluruh siklus hidup proyek AI, mulai dari definisi masalah dan pengumpulan data hingga pelatihan dan penerapan model. Mahir memanfaatkan berbagai bahasa pemrograman dan kerangka kerja, termasuk Python, TensorFlow, dan PyTorch. Menunjukkan kemampuan untuk berkolaborasi dengan tim lintas fungsi untuk memberikan solusi inovatif yang memenuhi tujuan bisnis. Rekam jejak yang terbukti dalam merancang dan mengimplementasikan sistem AI yang skalabel dan efisien. Bersemangat untuk menyumbangkan keahlian teknis dan semangat terhadap AI untuk mendorong kemajuan teknologi.",
   },
 ];
 
