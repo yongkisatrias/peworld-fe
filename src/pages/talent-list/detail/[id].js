@@ -52,7 +52,12 @@ function Detail(props) {
                 {data?.job}
               </p>
               <div className="flex gap-1 justify-center">
-                <img src="/images/icon/map-pin.svg" />
+                <Image
+                  src="/images/icon/map-pin.svg"
+                  alt="location"
+                  width={16}
+                  height={16}
+                />
                 <p
                   className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
                 >
