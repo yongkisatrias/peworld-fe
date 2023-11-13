@@ -17,6 +17,7 @@ function TalentList(props) {
   const [listData, setListData] = React.useState(props?.data?.slice(0, 4));
   const [currentPage, setCurrentPage] = React.useState(1);
   const countData = Math.round(props?.data?.length / 4);
+  const [searchBar, setSearchBar] = React.useState("");
 
   const handlePagination = (nextPage) => {
     setCurrentPage(nextPage);
@@ -57,7 +58,11 @@ function TalentList(props) {
         <div className="container mx-auto px-2">
           {/* Search Bar */}
           <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] flex justify-between p-4 rounded-lg gap-4">
-            <input placeholder="Search for any skill" className="w-full" />
+            <input
+              placeholder="Search for any skill"
+              className="w-full"
+              onChange={(item) => setSearchBar(item.target.value)}
+            />
             <button
               className={`${openSans.className} bg-[#5E50A1] rounded px-5 py-2 text-[#fff] text-base font-semibold leading-5`}
             >
@@ -67,63 +72,69 @@ function TalentList(props) {
           {/* Content */}
           <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] rounded-lg mt-8 px-5">
             {/* Talent List */}
-            {listData.map((item, key) => (
-              <div
-                className="grid grid-cols-1 md:grid-cols-6 gap-10 py-10 border-b-2"
-                key={key}
-              >
-                <div className="md:col-span-5 col-span-1 flex gap-5">
-                  <img
-                    src={item?.photo}
-                    width={100}
-                    height={100}
-                    alt="profile picture"
-                    className="rounded-full h-[100px]"
-                  />
-                  <div>
-                    <h4
-                      className={`${openSans.className} text-[#1F2A36] text-xl font-semibold`}
-                    >
-                      {item?.fullname}
-                    </h4>
-                    <p
-                      className={`${openSans.className} text-[#9EA0A5] text-sm font-normal mt-1`}
-                    >
-                      {item?.job}
-                    </p>
-                    <div className="flex gap-1 mt-1">
-                      <img src="/images/icon/map-pin.svg" />
-                      <p
-                        className={`${openSans.className} text-[#9EA0A5] text-sm font-normal`}
+            {listData
+              .filter((item) =>
+                item.fullname.toLowerCase().includes(searchBar.toLowerCase())
+              )
+              .map((item, key) => (
+                <div
+                  className="grid grid-cols-1 md:grid-cols-6 gap-10 py-10 border-b-2"
+                  key={key}
+                >
+                  <div className="md:col-span-5 col-span-1 flex gap-5">
+                    <img
+                      src={item?.photo}
+                      width={100}
+                      height={100}
+                      alt="profile picture"
+                      className="rounded-full h-[100px]"
+                    />
+                    <div>
+                      <h4
+                        className={`${openSans.className} text-[#1F2A36] text-xl font-semibold`}
                       >
-                        {item?.location}
+                        {item?.fullname}
+                      </h4>
+                      <p
+                        className={`${openSans.className} text-[#9EA0A5] text-sm font-normal mt-1`}
+                      >
+                        {item?.job}
                       </p>
-                    </div>
-                    {/* Skill */}
-                    <div className="flex flex-wrap gap-2">
-                      {item?.skills.map((item, key) => (
-                        <div
-                          className={`bg-[#fed417] rounded border-[#FBB017] border-2 px-3 py-1 mt-1`}
-                          key={key}
+                      <div className="flex gap-1 mt-1">
+                        <img src="/images/icon/map-pin.svg" />
+                        <p
+                          className={`${openSans.className} text-[#9EA0A5] text-sm font-normal`}
                         >
-                          <p
-                            className={`${openSans.className} text-[#fff] text-xs font-semibold`}
+                          {item?.location}
+                        </p>
+                      </div>
+                      {/* Skill */}
+                      <div className="flex flex-wrap gap-2">
+                        {item?.skills.map((item, key) => (
+                          <div
+                            className={`bg-[#fed417] rounded border-[#FBB017] border-2 px-3 py-1 mt-1`}
+                            key={key}
                           >
-                            {item}
-                          </p>
-                        </div>
-                      ))}
+                            <p
+                              className={`${openSans.className} text-[#fff] text-xs font-semibold`}
+                            >
+                              {item}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
+                  <button
+                    className={`${openSans.className} md:col-span-1 col-span-1 bg-[#5E50A1] rounded text-[#fff] text-base font-semibold leading-5 my-7 py-2`}
+                    onClick={() =>
+                      router.push(`/talent-list/detail/${item?.id}`)
+                    }
+                  >
+                    Lihat Profile
+                  </button>
                 </div>
-                <button
-                  className={`${openSans.className} md:col-span-1 col-span-1 bg-[#5E50A1] rounded text-[#fff] text-base font-semibold leading-5 my-7 py-2`}
-                  onClick={() => router.push(`/talent-list/detail/${item?.id}`)}
-                >
-                  Lihat Profile
-                </button>
-              </div>
-            ))}
+              ))}
           </div>
           {/* Content end */}
         </div>
