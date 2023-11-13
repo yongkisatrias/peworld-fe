@@ -14,10 +14,11 @@ const openSans = Open_Sans({
 
 function TalentList(props) {
   const router = useRouter();
-  const [listData, setListData] = React.useState(props?.data?.slice(0, 4));
+  const [setListData] = React.useState(props?.data?.slice(0, 4));
   const [currentPage, setCurrentPage] = React.useState(1);
   const countData = Math.round(props?.data?.length / 4);
   const [searchBar, setSearchBar] = React.useState("");
+  const allTalents = props?.data;
 
   const handlePagination = (nextPage) => {
     setCurrentPage(nextPage);
@@ -59,7 +60,7 @@ function TalentList(props) {
           {/* Search Bar */}
           <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] flex justify-between p-4 rounded-lg gap-4">
             <input
-              placeholder="Search for any skill"
+              placeholder="Search for any skill or name"
               className="w-full"
               onChange={(item) => setSearchBar(item.target.value)}
             />
@@ -72,10 +73,17 @@ function TalentList(props) {
           {/* Content */}
           <div className="bg-[#fff] drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] rounded-lg mt-8 px-5">
             {/* Talent List */}
-            {listData
-              .filter((item) =>
-                item.fullname.toLowerCase().includes(searchBar.toLowerCase())
+            {allTalents
+              .filter(
+                (item) =>
+                  item.fullname
+                    .toLowerCase()
+                    .includes(searchBar.toLowerCase()) ||
+                  item.skills.some((skill) =>
+                    skill.toLowerCase().includes(searchBar.toLowerCase())
+                  )
               )
+              .slice((currentPage - 1) * 4, currentPage * 4) // Apply pagination after filtering
               .map((item, key) => (
                 <div
                   className="grid grid-cols-1 md:grid-cols-6 gap-10 py-10 border-b-2"
@@ -110,7 +118,7 @@ function TalentList(props) {
                       </div>
                       {/* Skill */}
                       <div className="flex flex-wrap gap-2">
-                        {item?.skills.map((item, key) => (
+                        {item.skills.map((skill, key) => (
                           <div
                             className={`bg-[#fed417] rounded border-[#FBB017] border-2 px-3 py-1 mt-1`}
                             key={key}
@@ -118,7 +126,7 @@ function TalentList(props) {
                             <p
                               className={`${openSans.className} text-[#fff] text-xs font-semibold`}
                             >
-                              {item}
+                              {skill}
                             </p>
                           </div>
                         ))}
