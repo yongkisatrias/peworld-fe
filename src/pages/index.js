@@ -22,8 +22,8 @@ export default function Home() {
         {/* Navbar */}
         <Navbar />
         {/* Hero Content */}
-        <section className="grid grid-cols-1 md:grid-cols-2 items-center mt-20">
-          <div className="col-span-1 md:col-span-1">
+        <section className="grid grid-cols-1 md:grid-cols-2 items-center mt-10">
+          <div className="col-span-1 md:col-span-1 md:order-first order-last">
             <h1
               className={`${openSans.className} text-5xl font-semibold leading-[4.375rem] text-[#1F2A36]`}
             >
@@ -47,7 +47,7 @@ export default function Home() {
               Mulai Dari Sekarang
             </button>
           </div>
-          <div className="col-span-1 md:col-span-1 justify-self-end">
+          <div className="col-span-1 md:col-span-1 justify-self-end mb-10">
             <Image
               src="/images/homepage-image/hero-content.png"
               alt="hero-image"
@@ -105,7 +105,7 @@ export default function Home() {
       {/* Section 2 */}
       <section className="container mx-auto px-2 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 md:col-span-1 md:order-first order-last ">
             <h2
               className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-[#1F2A36]`}
             >
@@ -157,7 +157,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-span-1 md:col-span-1 justify-self-end">
+          <div className="col-span-1 md:col-span-1 justify-self-end mb-10">
             <Image
               src="/images/homepage-image/section-2.png"
               alt="section 2"
