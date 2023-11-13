@@ -59,11 +59,13 @@ function Detail(props) {
                   {data?.location}
                 </p>
               </div>
-              <p
-                className={`flex justify-center ${openSans.className} text-[#9EA0A5] text-sm font-normal leading-6 my-2 text-center`}
-              >
-                {data?.desc}
-              </p>
+              <div className="flex justify-center">
+                <p
+                  className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-6 my-2 text-justify md:w-[800px]`}
+                >
+                  {data?.desc}
+                </p>
+              </div>
               <div className="flex justify-center my-5">
                 <button
                   className={`bg-[#5E50A1] rounded px-20 py-2 ${openSans.className} text-[#fff] text-base font-bold leading-5`}

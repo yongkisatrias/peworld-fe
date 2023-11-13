@@ -27,11 +27,7 @@ export default function Home() {
             <h1
               className={`${openSans.className} text-5xl font-semibold leading-[4.375rem] text-[#1F2A36]`}
             >
-              Talenta terbaik negri
-              <br />
-              untuk perubahan
-              <br />
-              revolusi 4.0
+              Talenta terbaik negri untuk perubahan revolusi 4.0
             </h1>
             <p
               className={`${openSans.className} text-lg font-normal leading-7 text-[#46505C] mt-5`}
