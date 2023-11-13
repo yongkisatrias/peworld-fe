@@ -22,8 +22,7 @@ function Footer() {
           <p
             className={`${openSans.className} mt-7 text-lg font-normal leading-7 text-[#fff]`}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
-            ipsum et dui rhoncus auctor.
+            Temukan Bakat, Wujudkan Impian: Pintu Kesuksesanmu Berada di Sini!
           </p>
           <hr className="mt-16" />
           <div className="flex justify-between mt-7 pb-7">
