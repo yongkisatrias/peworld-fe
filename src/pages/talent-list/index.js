@@ -95,7 +95,7 @@ function TalentList(props) {
                       width={100}
                       height={100}
                       alt="profile picture"
-                      className="rounded-full h-[100px]"
+                      className="rounded-full w-[100px] h-[100px]"
                     />
                     <div>
                       <h4

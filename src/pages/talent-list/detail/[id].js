@@ -37,7 +37,7 @@ function Detail(props) {
                 alt="avatar"
                 width={150}
                 height={150}
-                className="rounded-full"
+                className="rounded-full w-[150px] h-[150px]"
               />
             </div>
             <div className="px-5">
