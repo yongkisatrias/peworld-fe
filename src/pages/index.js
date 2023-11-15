@@ -25,19 +25,19 @@ export default function Home() {
         <section className="grid grid-cols-1 md:grid-cols-2 items-center mt-10">
           <div className="col-span-1 md:col-span-1 md:order-first order-last">
             <h1
-              className={`${openSans.className} text-5xl font-semibold leading-[4.375rem] text-[#1F2A36]`}
+              className={`${openSans.className} text-5xl font-semibold leading-[4.375rem] text-primary`}
             >
               The country's best talent for the industrial revolution 4.0
             </h1>
             <p
-              className={`${openSans.className} text-lg font-normal leading-7 text-[#46505C] mt-5`}
+              className={`${openSans.className} text-lg font-normal leading-7 text_secondary mt-5`}
             >
               With advanced search features, unlimited career opportunities, and
               an extensive network, we lead you to a better working future. Join
               us now!
             </p>
             <button
-              className={`${openSans.className} bg-primary rounded px-6 py-5 text-[#fff] text-base font-bold mt-10`}
+              className={`${openSans.className} bg-primary rounded px-6 py-5 text-white text-base font-bold mt-10`}
               onClick={() => router.push(`/talent-list/`)}
             >
               Search Talent Now!
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className="col-span-1 md:col-span-1 justify-self-end">
             <h2
-              className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-[#1F2A36]`}
+              className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-primary`}
             >
               Why should you look for talent in Peword?
             </h2>
@@ -87,7 +87,7 @@ export default function Home() {
                   height={24}
                 />
                 <p
-                  className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
+                  className={`${openSans.className} text-base font-normal leading-7 text_secondary`}
                 >
                   {item}
                 </p>
@@ -103,12 +103,12 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="col-span-1 md:col-span-1 md:order-first order-last ">
             <h2
-              className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-[#1F2A36]`}
+              className={`${openSans.className} text-4xl font-semibold leading-[3.5rem] text-primary`}
             >
               Talent Skills
             </h2>
             <p
-              className={`${openSans.className} text-lg font-normal leading-7 text-[#46505C]`}
+              className={`${openSans.className} text-lg font-normal leading-7 text_secondary`}
             >
               Our talents have skills that are really needed by companies,
               including:
@@ -125,7 +125,7 @@ export default function Home() {
                       height={24}
                     />
                     <p
-                      className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
+                      className={`${openSans.className} text-base font-normal leading-7 text_secondary`}
                     >
                       {item}
                     </p>
@@ -143,7 +143,7 @@ export default function Home() {
                         height={24}
                       />
                       <p
-                        className={`${openSans.className} text-base font-normal leading-7 text-[#46505C]`}
+                        className={`${openSans.className} text-base font-normal leading-7 text_secondary`}
                       >
                         {item}
                       </p>
@@ -169,7 +169,7 @@ export default function Home() {
       <section className="container mx-auto px-2 my-24 flex justify-center sm:w-[100%]">
         <div className="flex justify-around flex-wrap bg-primary rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center px-5">
           <h2
-            className={`${openSans.className} text-[#fff] text-2xl font-semibold leading-10 md:text-4xl`}
+            className={`${openSans.className} text-white text-2xl font-semibold leading-10 md:text-4xl`}
           >
             What are you waiting for?
             <br />

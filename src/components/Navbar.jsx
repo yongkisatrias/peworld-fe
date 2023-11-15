@@ -27,7 +27,7 @@ function Navbar() {
             Masuk
           </button>
           <button
-            className={`${openSans.className} bg-primary rounded px-5 text-[#fff] text-sm font-bold`}
+            className={`${openSans.className} bg-primary rounded px-5 text-white text-sm font-bold`}
           >
             Daftar
           </button>

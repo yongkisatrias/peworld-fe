@@ -20,19 +20,19 @@ function Footer() {
             />
           </div>
           <p
-            className={`${openSans.className} mt-7 text-lg font-normal leading-7 text-[#fff]`}
+            className={`${openSans.className} mt-7 text-lg font-normal leading-7 text-white`}
           >
             Temukan Bakat, Wujudkan Impian: Pintu Kesuksesanmu Berada di Sini!
           </p>
           <hr className="mt-16" />
           <div className="flex justify-between mt-7 pb-7">
             <p
-              className={`${openSans.className} text-lg font-normal leading-7 text-[#fff]`}
+              className={`${openSans.className} text-lg font-normal leading-7 text-white`}
             >
               2023 Peworld. All right reserved
             </p>
             <div
-              className={`${openSans.className} text-lg font-normal leading-7 text-[#fff] flex gap-5`}
+              className={`${openSans.className} text-lg font-normal leading-7 text-white flex gap-5`}
             >
               <a>Telepon</a>
               <a>Email</a>

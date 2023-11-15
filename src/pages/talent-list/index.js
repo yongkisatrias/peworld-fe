@@ -46,7 +46,7 @@ function TalentList(props) {
       <section className="bg-primary">
         <div className="container mx-auto px-2">
           <h1
-            className={`${openSans.className} text-2xl font-bold leading-5 text-[#fff] py-5`}
+            className={`${openSans.className} text-2xl font-bold leading-5 text-white py-5`}
           >
             Top Jobs
           </h1>
@@ -65,7 +65,7 @@ function TalentList(props) {
               onChange={(item) => setSearchBar(item.target.value)}
             />
             <button
-              className={`${openSans.className} bg-primary rounded px-5 py-2 text-[#fff] text-base font-semibold leading-5`}
+              className={`${openSans.className} bg-primary rounded px-5 py-2 text-white text-base font-semibold leading-5`}
             >
               Search
             </button>
@@ -99,7 +99,7 @@ function TalentList(props) {
                     />
                     <div>
                       <h4
-                        className={`${openSans.className} text-[#1F2A36] text-xl font-semibold`}
+                        className={`${openSans.className} text-primary text-xl font-semibold`}
                       >
                         {item?.fullname}
                       </h4>
@@ -129,7 +129,7 @@ function TalentList(props) {
                             key={key}
                           >
                             <p
-                              className={`${openSans.className} text-[#fff] text-xs font-semibold`}
+                              className={`${openSans.className} text-white text-xs font-semibold`}
                             >
                               {skill}
                             </p>
@@ -139,7 +139,7 @@ function TalentList(props) {
                     </div>
                   </div>
                   <button
-                    className={`${openSans.className} md:col-span-1 col-span-1 bg-primary rounded text-[#fff] text-base font-semibold leading-5 my-7 py-2`}
+                    className={`${openSans.className} md:col-span-1 col-span-1 bg-primary rounded text-white text-base font-semibold leading-5 my-7 py-2`}
                     onClick={() =>
                       router.push(`/talent-list/detail/${item?.id}`)
                     }
@@ -170,7 +170,7 @@ function TalentList(props) {
               <button
                 className={`${openSans.className} border-2 rounded p-2 ${
                   increment === currentPage
-                    ? "bg-primary text-[#fff]"
+                    ? "bg-primary text-white"
                     : "bg-white"
                 }`}
                 key={increment}

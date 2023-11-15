@@ -42,12 +42,12 @@ function Detail(props) {
             </div>
             <div className="px-5">
               <h1
-                className={`flex justify-center ${openSans.className} text-[#1F2A36] text-2xl font-semibold leading-10 my-2`}
+                className={`flex justify-center ${openSans.className} text-primary text-2xl font-semibold leading-10 my-2`}
               >
                 {data?.fullname}
               </h1>
               <p
-                className={`flex justify-center ${openSans.className} text-[#1F2A36] text-sm font-normal leading-6`}
+                className={`flex justify-center ${openSans.className} text-primary text-sm font-normal leading-6`}
               >
                 {data?.job}
               </p>
@@ -73,13 +73,13 @@ function Detail(props) {
               </div>
               <div className="flex justify-center my-5">
                 <button
-                  className={`bg-primary rounded px-20 py-2 ${openSans.className} text-[#fff] text-base font-bold leading-5`}
+                  className={`bg-primary rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
                 >
                   Hire
                 </button>
               </div>
               <h2
-                className={`flex justify-center ${openSans.className} text-[#1F2A36] text-xl font-semibold leading-6 my-2`}
+                className={`flex justify-center ${openSans.className} text-primary text-xl font-semibold leading-6 my-2`}
               >
                 Skill
               </h2>
