@@ -144,7 +144,7 @@ function TalentList(props) {
                       router.push(`/talent-list/detail/${item?.id}`)
                     }
                   >
-                    Lihat Profile
+                    View Profile
                   </button>
                 </div>
               ))}
