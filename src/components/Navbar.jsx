@@ -24,12 +24,12 @@ function Navbar() {
           <button
             className={`${openSans.className} border border-[#5e50a1] rounded px-5 text-[#5e50a1] text-sm font-bold`}
           >
-            Masuk
+            Login
           </button>
           <button
             className={`${openSans.className} bg-primary rounded px-5 text-white text-sm font-bold`}
           >
-            Daftar
+            Register
           </button>
         </div>
       </nav>
