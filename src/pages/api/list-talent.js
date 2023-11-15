@@ -10,6 +10,12 @@ const listData = [
     location: "Bandung",
     skills: ["HTML", "CSS", "Javascript", "React", "Node.js"],
     desc: "Enthusiastic and detail-oriented web developer with a robust proficiency in both front-end and back-end technologies. Experienced in transforming design concepts into fully functional websites, prioritizing a seamless user experience. Collaborative team player with a track record of success in cross-functional projects. Adept at leveraging HTML, CSS, and JavaScript, along with expertise in popular frameworks like React and Node.js. Demonstrated ability to troubleshoot and optimize code for enhanced site performance. Committed to staying abreast of industry trends and continuously enhancing skills to deliver innovative and high-quality web solutions. Dedicated to contributing technical expertise and creative problems-solving to dynamic development teams.",
+    socmed: {
+      email: "Dominictoretto@gmail.com",
+      instagram: "@Dominictoretto",
+      github: "@Dominictoretto",
+      gitlab: "@Dominictoretto",
+    },
   },
   {
     id: 2,
@@ -20,6 +26,12 @@ const listData = [
     location: "Jakarta",
     skills: ["HTML", "CSS", "Javascript", "React.js"],
     desc: "Dedicated and detail-focused Front-End Developer with a fervor for crafting visually striking and intuitive user interfaces. Well-versed in the trinity of web development languages—HTML, CSS, and JavaScript—possessing a robust proficiency in responsive web design and ensuring seamless cross-browser compatibility. A collaborative team player, adept at working with cross-functional teams to actualize design concepts and enhance overall user experience. Specialized in harnessing the power of modern front-end frameworks and libraries, particularly adept with React.js, to engineer dynamic and interactive web applications. A keen observer of the ever-evolving front-end development landscape, committed to staying abreast of emerging trends and technologies. Passionate about translating innovative ideas into tangible, user-centric solutions, contributing to a dynamic and cutting-edge digital environment.",
+    socmed: {
+      email: "Brianoconner@gmail.com",
+      instagram: "@Brianoconner",
+      github: "@Brianoconner",
+      gitlab: "@Brianoconner",
+    },
   },
   {
     id: 3,
@@ -30,6 +42,12 @@ const listData = [
     location: "Yogyakarta",
     skills: ["Java", "Python", "PHP"],
     desc: "Experienced, detail-oriented Back-End Developer with a passion for creating robust and scalable solutions. Proficient in designing, implementing, testing, and maintaining server-side applications and databases. Adept at collaborating with cross-functional teams to drive project success. Skilled in utilizing a variety of programming languages, frameworks, and databases to produce high-quality, efficient, and secure code. Committed to always following technological developments and industry trends to improve project performance. Proven ability to analyze user needs and convert them into reliable and efficient software solutions.",
+    socmed: {
+      email: "Lettyortiz@gmail.com",
+      instagram: "@Lettyortiz",
+      github: "@Lettyortiz",
+      gitlab: "@Lettyortiz",
+    },
   },
   {
     id: 4,
@@ -40,6 +58,12 @@ const listData = [
     location: "Malang",
     skills: ["Java", "Kotlin"],
     desc: "Results-oriented Android developer with 3 years of experience in designing, implementing, testing and maintaining innovative mobile applications. Adept at collaborating with cross-functional teams to analyze user needs and deliver high-quality software solutions. Proven expertise in the Java and Kotlin programming languages, as well as a deep understanding of the Android SDK, UI/UX design principles, and mobile development best practices.",
+    socmed: {
+      email: "Miatoretto@gmail.com",
+      instagram: "@Miatoretto",
+      github: "@Miatoretto",
+      gitlab: "@Miatoretto",
+    },
   },
   {
     id: 5,
@@ -50,6 +74,12 @@ const listData = [
     location: "Balikpapan",
     skills: ["Swift", "Objective-C"],
     desc: "Dedicated and skilled iOS developer with a proven track record of creating dynamic and innovative mobile applications. Proficient in Swift and Objective-C, with a deep understanding of the iOS SDK. Adept at collaborating with cross-functional teams to define, design, and deliver new features. Experienced in the full mobile development lifecycle, from concept to deployment.",
+    socmed: {
+      email: "Vinceee@gmail.com",
+      instagram: "@Vinceee",
+      github: "@Vinceee",
+      gitlab: "@Vinceee",
+    },
   },
   {
     id: 6,
@@ -60,6 +90,12 @@ const listData = [
     location: "Manado",
     skills: ["C++", "C#"],
     desc: "Enthusiastic and highly skilled Game Developer with a passion for creating immersive and engaging gaming experiences. Proven track record of successfully delivering high-quality games from concept to release, leveraging strong technical skills and creative problem solving. Proficient in a variety of programming languages and game development tools, with a deep understanding of game design principles. Adept at collaborating with cross-functional teams to realize innovative ideas and achieve project milestones. Committed to keeping up with industry trends and technology to consistently deliver cutting-edge gaming experiences.",
+    socmed: {
+      email: "Leonnn@gmail.com",
+      instagram: "@Leonnn",
+      github: "@Leonnn",
+      gitlab: "@Leonnn",
+    },
   },
   {
     id: 7,
@@ -70,6 +106,12 @@ const listData = [
     location: "Padang",
     skills: ["Python", "R", "SQL"],
     desc: "Results-oriented and highly skilled Data Scientist with a proven track record of leveraging advanced analytics and machine learning to extract valuable insights from complex data sets. Having a strong foundation in statistical analysis and programming, I excel at turning raw data into actionable business strategies. With an eye for detail and a passion for innovation, I have successfully implemented predictive models and data-driven solutions that contribute to improving decision-making processes. Experienced in leveraging a variety of tools and languages, including Python, R, and SQL, I am adept at designing and implementing end-to-end data pipelines. My ability to communicate complex technical concepts to non-technical stakeholders, coupled with a commitment to continuous learning, positions me as a valuable asset in driving data-driven initiatives within the organization.",
+    socmed: {
+      email: "Jesseee@gmail.com",
+      instagram: "@Jesseee",
+      github: "@Jesseee",
+      gitlab: "@Jesseee",
+    },
   },
   {
     id: 8,
@@ -87,6 +129,12 @@ const listData = [
       "MockFlow",
     ],
     desc: "Passionate, detail-oriented UI/UX designer with a proven track record of creating engaging and intuitive digital experiences. Proficient in combining creativity with functionality to produce designs that are visually appealing and user-friendly. Skilled in conducting user research, wireframing, prototyping, and collaborating with cross-functional teams to bring concepts to life. Proficient in industry standard design tools and committed to staying current with emerging design trends. Excel at translating complex ideas into seamless, user-centric interfaces. Passionate about contributing expertise in improving user experience for innovative projects.",
+    socmed: {
+      email: "Johnnytran@gmail.com",
+      instagram: "@Johnnytran",
+      github: "@Johnnytran",
+      gitlab: "@Johnnytran",
+    },
   },
   {
     id: 9,
@@ -96,6 +144,12 @@ const listData = [
     location: "Makassar",
     skills: ["Java", "Python", "JavaScript", "Git", "Scrum", "Selenium"],
     desc: "Experienced, results-oriented Software Developer with a strong background in designing, implementing, testing and maintaining innovative software solutions. Proficient in a variety of programming languages and frameworks, with a keen ability to adapt to new technologies. Adept at collaborating with cross-functional teams to analyze user needs and deliver high-quality software applications. Proven track record of successfully translating business needs into technical solutions. Passionate about keeping up with industry trends and continually improving skills to drive project success.",
+    socmed: {
+      email: "Agentbilkins@gmail.com",
+      instagram: "@Agentbilkins",
+      github: "@Agentbilkins",
+      gitlab: "@Agentbilkins",
+    },
   },
   {
     id: 10,
@@ -105,6 +159,12 @@ const listData = [
     location: "Surakarta",
     skills: ["Swift", "Kotlin", "Flutter "],
     desc: "Results-oriented Mobile App Developer with 5 years of experience in designing, developing and maintaining cutting-edge mobile applications for iOS and Android platforms. Proficient in native and cross-platform development, leveraging a variety of technologies and frameworks.",
+    socmed: {
+      email: "Sergeanttanner@gmail.com",
+      instagram: "@Sergeanttanner",
+      github: "@Sergeanttanner",
+      gitlab: "@Sergeanttanner",
+    },
   },
   {
     id: 11,
@@ -115,6 +175,12 @@ const listData = [
     location: "Bogor",
     skills: ["Python ", "TensorFlow", "PyTorch"],
     desc: "Results-oriented Machine Learning Engineer with a proven track record of developing and implementing innovative machine learning solutions to solve complex problems. Proficient in designing and implementing scalable models, leveraging a strong background in mathematics, statistics, and programming. Proficient in leveraging various machine learning algorithms and frameworks to extract meaningful insights from data. Experience collaborating with cross-functional teams to deliver solutions that align with business objectives. Passionate about keeping up with developments in artificial intelligence trends and continuously improving skills through continuous learning.",
+    socmed: {
+      email: "Romanpearce@gmail.com",
+      instagram: "@Romanpearce",
+      github: "@Romanpearce",
+      gitlab: "@Romanpearce",
+    },
   },
   {
     id: 12,
@@ -125,6 +191,12 @@ const listData = [
     location: "Ende",
     skills: ["Python", "PyTorch", "TensorFlow"],
     desc: "Dedicated and results-oriented AI engineer with a strong background in machine learning and artificial intelligence. Proficient in developing and applying advanced algorithms to solve complex problems. Experienced across the entire AI project lifecycle, from problem definition and data collection to model training and deployment. Proficient in utilizing a variety of programming languages and frameworks, including Python, TensorFlow, and PyTorch. Demonstrated ability to collaborate with cross-functional teams to deliver innovative solutions that meet business objectives. Proven track record in designing and implementing scalable and efficient AI systems. Eager to contribute technical expertise and passion for AI to drive technological progress.",
+    socmed: {
+      email: "Tejparker@gmail.com",
+      instagram: "@Tejparker",
+      github: "@Tejparker",
+      gitlab: "@Tejparker",
+    },
   },
   {
     id: 13,
@@ -135,6 +207,12 @@ const listData = [
     location: "Ubud",
     skills: ["HTML", "CSS", "Javascript", "React", "Node.js"],
     desc: "Dedicated and detail-oriented Web Developer with a fervent passion for crafting seamless online experiences. Boasting a robust foundation in both front-end and back-end technologies, I specialize in translating design concepts into fully functional websites. My proficiency extends to HTML, CSS, and JavaScript, with expertise in popular frameworks like React and Node.js. I thrive in collaborative, cross-functional environments, working seamlessly with diverse teams to drive project success. I excel at troubleshooting and optimizing code, consistently enhancing site performance. My commitment to staying abreast of industry trends reflects in my continuous efforts to improve and innovate, ensuring the delivery of high-quality web solutions. Committed to contributing technical prowess and creative problem-solving skills, I am eager to bring my passion for development to dynamic teams, where I can leverage my skills to create impactful and innovative digital solutions.",
+    socmed: {
+      email: "Sukisuki@gmail.com",
+      instagram: "@Sukisuki",
+      github: "@Sukisuki",
+      gitlab: "@Sukisuki",
+    },
   },
   {
     id: 14,
@@ -144,6 +222,12 @@ const listData = [
     location: "Sabang",
     skills: ["HTML", "CSS", "Javascript", "React.js"],
     desc: "Results-driven Front-End Developer with extensive experience and meticulous attention to detail. Committed to crafting visually stunning and intuitive user interfaces. Well-versed in HTML, CSS, and JavaScript, and adept at implementing responsive web design principles and ensuring cross-browser compatibility. Collaborative team player with a proven track record of translating design concepts into compelling user experiences. Proficient in utilizing modern front-end frameworks like React.js to develop dynamic and interactive web applications. Continuously stay abreast of emerging trends and technologies in the dynamic field of front-end development to ensure cutting-edge solutions. Passionate about optimizing user engagement and consistently enhancing the overall digital experience.",
+    socmed: {
+      email: "Markhammm@gmail.com",
+      instagram: "@Markhammm",
+      github: "@Markhammm",
+      gitlab: "@Markhammm",
+    },
   },
   {
     id: 15,
@@ -154,6 +238,12 @@ const listData = [
     location: "Semarang",
     skills: ["Java", "Python", "PHP"],
     desc: "Results-driven Back-End Developer with a strong dedication to crafting resilient and scalable solutions. Experienced in the end-to-end development process, from conceptualization and design to testing and maintenance of server-side applications and databases. A meticulous professional with a keen eye for detail, consistently delivering high-quality code. Collaborative team player, adept at working across disciplines to ensure the success of projects. Proficient in leveraging a diverse set of programming languages, frameworks, and databases to create efficient and secure software. Committed to staying abreast of technological advancements and industry trends to enhance project performance. Demonstrated ability to analyze user requirements and translate them into robust and efficient software solutions. Passionate about optimizing backend processes to improve overall system performance. Adaptable and quick to learn, dedicated to continuous improvement in both individual skills and project outcomes.",
+    socmed: {
+      email: "Monicafuentes@gmail.com",
+      instagram: "@Monicafuentes",
+      github: "@Monicafuentes",
+      gitlab: "@Monicafuentes",
+    },
   },
   {
     id: 16,
@@ -164,6 +254,12 @@ const listData = [
     location: "Merauke",
     skills: ["Java", "Kotlin"],
     desc: "Results-driven Android developer with a track record of 3 years in conceptualizing, implementing, testing, and sustaining cutting-edge mobile applications. Proficient in Java and Kotlin programming languages, showcasing a proven ability to deliver high-quality software solutions. Adept at collaborating with cross-functional teams to dissect user requirements and ensure the delivery of exceptional mobile applications. Possesses a profound understanding of the Android SDK, UI/UX design principles, and adheres to mobile development best practices. Committed to continuous learning and staying abreast of emerging technologies to enhance the efficiency and innovation of Android app development.",
+    socmed: {
+      email: "Orangejulius@gmail.com",
+      instagram: "@Orangejulius",
+      github: "@Orangejulius",
+      gitlab: "@Orangejulius",
+    },
   },
   {
     id: 17,
@@ -174,6 +270,12 @@ const listData = [
     location: "Surabaya",
     skills: ["Swift", "Objective-C"],
     desc: "Experienced and proficient iOS Developer with a demonstrated history of crafting dynamic and innovative mobile applications. Specialized in Swift and Objective-C, showcasing an in-depth mastery of the iOS SDK. Recognized for the ability to collaborate seamlessly with cross-functional teams to conceptualize, design, and implement new features. Well-versed in the entire mobile development lifecycle, from initial concept to final deployment. A track record of delivering high-quality and user-centric applications in alignment with project goals and industry best practices. Passionate about staying updated with the latest trends and technologies in iOS development to consistently bring cutting-edge solutions to projects.",
+    socmed: {
+      email: "Slapjack@gmail.com",
+      instagram: "@Slapjack",
+      github: "@Slapjack",
+      gitlab: "@Slapjack",
+    },
   },
   {
     id: 18,
@@ -184,6 +286,12 @@ const listData = [
     location: "Medan",
     skills: ["C++", "C#"],
     desc: "Passionate and skilled Game Developer, dedicated to crafting captivating and immersive gaming adventures. A proven achiever in bringing top-notch games from conception to launch, I blend technical prowess with creative problem-solving. Proficient in diverse programming languages and game development tools, I possess a profound comprehension of game design principles. A collaborative team player, adept at working across functions to transform innovative concepts into reality and meet project milestones. Committed to staying abreast of industry trends and technological advancements, my goal is to consistently deliver cutting-edge gaming experiences that captivate and thrill players.",
+    socmed: {
+      email: "Carterverone@gmail.com",
+      instagram: "@Carterverone",
+      github: "@Carterverone",
+      gitlab: "@Carterverone",
+    },
   },
   {
     id: 19,
@@ -194,6 +302,12 @@ const listData = [
     location: "Denpasar",
     skills: ["Python", "R", "SQL"],
     desc: "Results-driven and highly proficient Data Scientist with a demonstrated history of harnessing advanced analytics and machine learning techniques to distill meaningful insights from intricate data sets. Armed with a solid foundation in statistical analysis and programming, I specialize in transforming raw data into actionable business strategies. Meticulous attention to detail, coupled with a fervor for innovation, has fueled my success in implementing predictive models and data-driven solutions that significantly enhance decision-making processes. My expertise extends to a diverse array of tools and languages, with proficiency in Python, R, and SQL. I possess a knack for designing and implementing end-to-end data pipelines, ensuring seamless data flow and processing. A key strength lies in my ability to effectively communicate complex technical concepts to non-technical stakeholders, fostering a collaborative environment that bridges the gap between data science and business objectives.",
+    socmed: {
+      email: "Seanboswell@gmail.com",
+      instagram: "@Seanboswell",
+      github: "@Seanboswell",
+      gitlab: "@Seanboswell",
+    },
   },
   {
     id: 20,
@@ -211,6 +325,12 @@ const listData = [
       "MockFlow",
     ],
     desc: "Enthusiastic and meticulous UI/UX designer, showcasing a demonstrable history of crafting immersive and user-friendly digital experiences. Adept at seamlessly merging creativity with functionality, resulting in visually captivating designs. Experienced in the entire design process, from comprehensive user research to wireframing, prototyping, and successful collaboration with diverse teams. Proficient in utilizing industry-standard design tools and dedicated to staying abreast of evolving design trends. Excels in transforming intricate concepts into streamlined, user-centric interfaces. Devoted to leveraging expertise to enhance user experiences across innovative projects.",
+    socmed: {
+      email: "Hanlue@gmail.com",
+      instagram: "@Hanlue",
+      github: "@Hanlue",
+      gitlab: "@Hanlue",
+    },
   },
 ];
 
