@@ -95,6 +95,40 @@ function Detail(props) {
                   ))}
                 </div>
               </div>
+              <div className="pb-5">
+                <div className="flex justify-center items-center gap-3 mb-3">
+                  <img src="/images/logo/mail.svg" />
+                  <p
+                    className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
+                  >
+                    {data?.socmed?.email}
+                  </p>
+                </div>
+                <div className="flex justify-center items-center gap-3 my-3">
+                  <img src="/images/logo/instagram.svg" />
+                  <p
+                    className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
+                  >
+                    {data?.socmed?.instagram}
+                  </p>
+                </div>
+                <div className="flex justify-center items-center gap-3 my-3">
+                  <img src="/images/logo/github.svg" />
+                  <p
+                    className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
+                  >
+                    {data?.socmed?.github}
+                  </p>
+                </div>
+                <div className="flex justify-center items-center gap-3 my-3">
+                  <img src="/images/logo/gitlab.svg" />
+                  <p
+                    className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
+                  >
+                    {data?.socmed?.gitlab}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
