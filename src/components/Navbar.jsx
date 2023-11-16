@@ -23,11 +23,13 @@ function Navbar() {
         <div className="flex gap-4">
           <button
             className={`${openSans.className} border border-[#5e50a1] rounded px-5 text-[#5e50a1] text-sm font-bold`}
+            onClick={() => router.push(`/login`)}
           >
             Login
           </button>
           <button
             className={`${openSans.className} bg-primary rounded px-5 text-white text-sm font-bold`}
+            onClick={() => router.push(`/register`)}
           >
             Register
           </button>
