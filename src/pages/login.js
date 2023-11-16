@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
@@ -8,6 +9,9 @@ const openSans = Open_Sans({
 function Login() {
   return (
     <div className={openSans.className}>
+      <Head>
+        <title>Peworld | Login</title>
+      </Head>
       <div className="grid grid-cols-4">
         {/* Left Section */}
         <div className="col-span-2 relative">
