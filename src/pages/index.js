@@ -191,3 +191,10 @@ export default function Home() {
     </main>
   );
 }
+
+// To change the page to static HTML
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
