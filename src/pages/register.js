@@ -14,7 +14,7 @@ function Register() {
       </Head>
       <div className="grid grid-cols-4">
         {/* Left Section */}
-        <div className="col-span-4 md:col-span-2 relative md:block">
+        <div className="col-span-4 md:col-span-2 relative hidden md:block">
           <div className="absolute bg-[#5E50A1] w-[100%] h-[100vh] opacity-[.60]" />
           <img
             src="/images/auth/auth.png"
@@ -32,7 +32,7 @@ function Register() {
           </div>
         </div>
         {/* Right Section */}
-        <div className="col-span-4 md:col-span-2 bg-[#F6F7F8] grid md:px-32 md:py-32 overflow-x-scroll h-[100vh]">
+        <div className="col-span-4 md:col-span-2 bg-[#F6F7F8] grid px-5 py-10 md:px-32 md:py-32 overflow-x-scroll h-[100vh]">
           <h2 className="text-primary text-4xl font-semibold py-2">
             Hello, Pewpeople!
           </h2>
@@ -88,11 +88,7 @@ function Register() {
             placeholder="Enter password confirmation"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
           />
-          <span className="text-right text-primary text-base font-normal my-4">
-            <a href="#">Forgot password?</a>
-          </span>
-
-          <button className="bg-[#FBB017] rounded py-3 text-white text-base font-bold">
+          <button className="bg-[#FBB017] rounded py-3 my-10 text-white text-base font-bold">
             Login
           </button>
           <span className="text-center text-primary text-base font-normal mt-4">
