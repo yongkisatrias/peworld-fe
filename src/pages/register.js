@@ -14,7 +14,7 @@ function Register() {
       </Head>
       <div className="grid grid-cols-4">
         {/* Left Section */}
-        <div className="col-span-4 md:col-span-2 relative hidden md:block">
+        <div className="col-span-4 md:col-span-2 relative md:block">
           <div className="absolute bg-[#5E50A1] w-[100%] h-[100vh] opacity-[.60]" />
           <img
             src="/images/auth/auth.png"
@@ -30,6 +30,77 @@ function Register() {
               Find talented & best developers in various areas of expertise.
             </h1>
           </div>
+        </div>
+        {/* Right Section */}
+        <div className="col-span-4 md:col-span-2 bg-[#F6F7F8] grid md:px-32 md:py-32 overflow-x-scroll h-[100vh]">
+          <h2 className="text-primary text-4xl font-semibold py-2">
+            Hello, Pewpeople!
+          </h2>
+          <p className="text_secondary text-lg font-normal py-1">
+            Please complete your data to register on the peworld website.
+          </p>
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Name
+          </label>
+          <input
+            placeholder="Enter a full name"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Email
+          </label>
+          <input
+            placeholder="Enter email address"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Company
+          </label>
+          <input
+            placeholder="Enter the company name"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Position
+          </label>
+          <input
+            placeholder="Position in your company"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Phone number
+          </label>
+          <input
+            placeholder="Enter your phone number"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Password
+          </label>
+          <input
+            placeholder="Enter password"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+            Confirm password
+          </label>
+          <input
+            placeholder="Enter password confirmation"
+            className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+          />
+          <span className="text-right text-primary text-base font-normal my-4">
+            <a href="#">Forgot password?</a>
+          </span>
+
+          <button className="bg-[#FBB017] rounded py-3 text-white text-base font-bold">
+            Login
+          </button>
+          <span className="text-center text-primary text-base font-normal mt-4">
+            Do you already have an account?{" "}
+            <a href="#" className="text-[#FBB017] text-base font-normal">
+              Login here
+            </a>
+          </span>
         </div>
       </div>
     </div>
