@@ -14,7 +14,7 @@ function Login() {
       </Head>
       <div className="grid grid-cols-4">
         {/* Left Section */}
-        <div className="col-span-2 relative">
+        <div className="col-span-4 md:col-span-2 relative hidden md:block">
           <div className="absolute bg-[#5E50A1] w-[100%] h-[100vh] opacity-[.60]" />
           <img
             src="/images/auth/auth.png"
@@ -32,7 +32,7 @@ function Login() {
           </div>
         </div>
         {/* Right Section */}
-        <div className="col-span-2 bg-[#F6F7F8] grid content-center px-32">
+        <div className="col-span-4 md:col-span-2 bg-[#F6F7F8] grid content-center px-5 h-[100vh] md:px-32">
           <h2 className="text-primary text-4xl font-semibold py-2">
             Hello, Pewpeople!
           </h2>
