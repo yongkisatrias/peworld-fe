@@ -3,10 +3,10 @@ import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
 import axios from "axios";
-import { useRouter } from "next/router";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -72,11 +72,13 @@ function Detail(props) {
                 </p>
               </div>
               <div className="flex justify-center my-5">
-                <button
-                  className={`bg-primary rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
-                >
-                  Hire
-                </button>
+                <Link href={`/talent-list/contact/${data?.id}`}>
+                  <button
+                    className={`bg-primary rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
+                  >
+                    Hire
+                  </button>
+                </Link>
               </div>
               <h2
                 className={`flex justify-center ${openSans.className} text-primary text-xl font-semibold leading-6 my-2`}
