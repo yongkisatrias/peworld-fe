@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Open_Sans } from "next/font/google";
+import Link from "next/link";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -21,10 +22,13 @@ function Login() {
             className="w-[100%] h-[100vh] object-cover"
             alt="background-image"
           />
-          <img
-            src="/images/logo/peworld-white.svg"
-            className="absolute inset-0 w-[10rem] h-[5rem] p-4"
-          />
+          <Link href="/">
+            <img
+              src="/images/logo/peworld-white.svg"
+              className="absolute inset-0 w-[10rem] h-[5rem] p-4"
+              alt="peworld-logo"
+            />
+          </Link>
           <div className="absolute flex justify-center items-center inset-0">
             <h1 className="text-white text-5xl font-bold leading-[4.375rem] px-32">
               Find talented & best developers in various areas of expertise.
@@ -40,33 +44,47 @@ function Login() {
             Please enter your email and password to log in to the peworld
             website.
           </p>
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
-            placeholder="Enter email address"
+            id="email"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter email address"
+            type="email"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="password"
+          >
             Password
           </label>
           <input
-            placeholder="Enter password"
+            id="password"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter password"
+            type="password"
           />
-          <span className="text-right text-primary text-base font-normal my-4">
-            <a href="#">Forgot password?</a>
-          </span>
+          <Link href="#">
+            <p className="text-right text-primary text-base font-normal my-4">
+              Forgot password?
+            </p>
+          </Link>
 
           <button className="bg-[#FBB017] rounded py-3 text-white text-base font-bold">
             Login
           </button>
-          <span className="text-center text-primary text-base font-normal mt-4">
+          <p className="text-center text-primary text-base font-normal mt-4">
             You don't have an account yet?{" "}
-            <a href="#" className="text-[#FBB017] text-base font-normal">
-              Register here
-            </a>
-          </span>
+            <Link href="/register">
+              <span className="text-[#FBB017] text-base font-normal">
+                Register here
+              </span>
+            </Link>
+          </p>
         </div>
       </div>
     </div>
