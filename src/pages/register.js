@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Open_Sans } from "next/font/google";
+import Link from "next/link";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -39,64 +40,101 @@ function Register() {
           <p className="text_secondary text-lg font-normal py-1">
             Please complete your data to register on the peworld website.
           </p>
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="name"
+          >
             Name
           </label>
           <input
-            placeholder="Enter a full name"
+            id="name"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter a full name"
+            type="text"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
-            placeholder="Enter email address"
+            id="email"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter email address"
+            type="email"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="company"
+          >
             Company
           </label>
           <input
-            placeholder="Enter the company name"
+            id="company"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter the company name"
+            type="text"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="position"
+          >
             Position
           </label>
           <input
-            placeholder="Position in your company"
+            id="position"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Position in your company"
+            type="text"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="phone-number"
+          >
             Phone number
           </label>
           <input
-            placeholder="Enter your phone number"
+            id="phone-number"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter your phone number"
+            type="text"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="password"
+          >
             Password
           </label>
           <input
-            placeholder="Enter password"
+            id="password"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter password"
+            type="password"
           />
-          <label className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4">
+          <label
+            className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+            htmlFor="password2"
+          >
             Confirm password
           </label>
           <input
-            placeholder="Enter password confirmation"
+            id="password2"
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+            placeholder="Enter password confirmation"
+            type="password"
           />
           <button className="bg-[#FBB017] rounded py-3 my-10 text-white text-base font-bold">
             Login
           </button>
-          <span className="text-center text-primary text-base font-normal mt-4">
+          <p className="text-center text-primary text-base font-normal mt-4">
             Do you already have an account?{" "}
-            <a href="#" className="text-[#FBB017] text-base font-normal">
-              Login here
-            </a>
-          </span>
+            <Link href="/login">
+              <span className="text-[#FBB017] text-base font-normal">
+                Login here
+              </span>
+            </Link>
+          </p>
         </div>
       </div>
     </div>
