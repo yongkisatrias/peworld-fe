@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Open_Sans } from "next/font/google";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -153,12 +154,16 @@ function ContactPage(props) {
               rows={5}
             />
             <button className="bg-[#FBB017] rounded py-3 my-10 text-white text-base font-bold">
-              Login
+              Send
             </button>
           </div>
         </div>
       </section>
       {/* Main section end */}
+
+      {/* Footer */}
+      <Footer />
+      {/* Footer end */}
     </div>
   );
 }
