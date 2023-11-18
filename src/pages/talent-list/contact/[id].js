@@ -85,10 +85,76 @@ function ContactPage(props) {
           </div>
 
           {/* Right section */}
-          <div className="col-span-2 py-12">
-            <div className="bg-white">
-              <h1>Contact Louis Tomlinson</h1>
-            </div>
+          <div className="col-span-2 py-12 grid">
+            <h1 className="text-3xl font-semibold">Contact {data?.fullname}</h1>
+            <p className="text-[#46505C] text-lg font-normal mt-2 mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              euismod ipsum et dui rhoncus auctor.
+            </p>
+            <label
+              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+              htmlFor="purpose"
+            >
+              The purpose of this message
+            </label>
+            <input
+              id="purpose"
+              className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+              placeholder="Enter a purpose"
+              type="text"
+            />
+            <label
+              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+              htmlFor="name"
+            >
+              Name
+            </label>
+            <input
+              id="name"
+              className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+              placeholder="Enter a full name"
+              type="text"
+            />
+            <label
+              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+              placeholder="Enter email address"
+              type="email"
+            />
+            <label
+              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+              htmlFor="phone-number"
+            >
+              Phone number
+            </label>
+            <input
+              id="phone-number"
+              className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
+              placeholder="Enter your phone number"
+              type="text"
+            />
+            <label
+              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
+              htmlFor="message"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              className="rounded border border-[#E2E5ED] pl-4 pt-2 text-[#858D96] text-base font-normal"
+              placeholder="Enter message"
+              type="text"
+              rows={5}
+            />
+            <button className="bg-[#FBB017] rounded py-3 my-10 text-white text-base font-bold">
+              Login
+            </button>
           </div>
         </div>
       </section>
