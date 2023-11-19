@@ -14,6 +14,25 @@ const openSans = Open_Sans({
 
 function ContactPage(props) {
   const { data } = props;
+  const token = getCookie("token");
+  const [subject, setSubject] = React.useState("");
+  const [senderName, setSenderName] = React.useState("");
+  const [description, setDescription] = React.useState("");
+
+  const handleSend = () => {
+    axios.post(
+      "https://hire-job.onrender.com/v1/contact",
+      {
+        subject: subject,
+        sender: senderName,
+        description: description,
+        toName: data?.fullname,
+        to: data?.socmed?.email,
+      },
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+  };
+
   return (
     <div className={openSans.className}>
       <Head>
@@ -87,7 +106,7 @@ function ContactPage(props) {
           </div>
 
           {/* Right section */}
-          <div className="md:col-span-2 col-span-3 py-12 grid">
+          <div className="md:col-span-2 col-span-3 py-5 px-3 md:py-12 grid auto-rows-max">
             <h1 className="text-3xl font-semibold">Contact {data?.fullname}</h1>
             <p className="text-[#46505C] text-lg font-normal mt-2 mb-5">
               Please complete all the columns below to contact the talent you
@@ -104,6 +123,7 @@ function ContactPage(props) {
               className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
               placeholder="Enter a purpose"
               type="text"
+              onChange={(e) => setSubject(e.target.value)}
             />
             <label
               className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
@@ -116,30 +136,7 @@ function ContactPage(props) {
               className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
               placeholder="Enter a full name"
               type="text"
-            />
-            <label
-              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
-              htmlFor="email"
-            >
-              Email
-            </label>
-            <input
-              id="email"
-              className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
-              placeholder="Enter email address"
-              type="email"
-            />
-            <label
-              className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
-              htmlFor="phone-number"
-            >
-              Phone number
-            </label>
-            <input
-              id="phone-number"
-              className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
-              placeholder="Enter your phone number"
-              type="text"
+              onChange={(e) => setSenderName(e.target.value)}
             />
             <label
               className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
@@ -153,8 +150,12 @@ function ContactPage(props) {
               placeholder="Enter message"
               type="text"
               rows={5}
+              onChange={(e) => setDescription(e.target.value)}
             />
-            <button className="bg-[#FBB017] rounded py-3 mt-10 text-white text-base font-bold">
+            <button
+              className="bg-[#FBB017] rounded py-3 mt-10 text-white text-base font-bold"
+              onClick={handleSend}
+            >
               Send
             </button>
           </div>
