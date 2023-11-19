@@ -2,12 +2,45 @@ import React from "react";
 import Head from "next/head";
 import { Open_Sans } from "next/font/google";
 import Link from "next/link";
+import { setCookie } from "cookies-next";
+import axios from "axios";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
 function Login() {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [errorMessage, setErrorMessage] = React.useState(null);
+
+  const handleLogin = () => {
+    setIsLoading(true);
+    axios
+      .post("https://hire-job.onrender.com/v1/auth/login", {
+        email: email,
+        password: password,
+      })
+      .then((result) => {
+        setCookie("token", result?.data?.data?.token);
+        setCookie("user", JSON.stringify(result?.data?.data?.user));
+
+        window.location.href = "/";
+      })
+      .catch((err) => {
+        const { email, password } = err?.response?.data?.messages;
+
+        setErrorMessage(
+          email?.message ??
+            password?.message ??
+            err?.response?.data?.messages ??
+            "Something wrong in our app, try again later."
+        );
+      })
+      .finally(() => setIsLoading(false));
+  };
+
   return (
     <div className={openSans.className}>
       <Head>
@@ -44,6 +77,11 @@ function Login() {
             Please enter your email and password to log in to the peworld
             website.
           </p>
+          {errorMessage ? (
+            <div className="bg-[#f8d7da] text-[#721c24] px-4 py-3 my-4 rounded">
+              {errorMessage}
+            </div>
+          ) : null}
           <label
             className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
             htmlFor="email"
@@ -55,6 +93,7 @@ function Login() {
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
             placeholder="Enter email address"
             type="email"
+            onChange={(e) => setEmail(e.target.value)}
           />
           <label
             className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
@@ -67,6 +106,7 @@ function Login() {
             className="h-[3.125rem] rounded border border-[#E2E5ED] pl-4 text-[#858D96] text-base font-normal"
             placeholder="Enter password"
             type="password"
+            onChange={(e) => setPassword(e.target.value)}
           />
           <Link href="#">
             <p className="text-right text-primary text-base font-normal my-4">
@@ -74,8 +114,12 @@ function Login() {
             </p>
           </Link>
 
-          <button className="bg-[#FBB017] rounded py-3 text-white text-base font-bold">
-            Login
+          <button
+            className="bg-[#FBB017] rounded py-3 text-white text-base font-bold"
+            onClick={handleLogin}
+            disabled={isLoading}
+          >
+            {isLoading ? "Loading..." : "Login"}
           </button>
           <p className="text-center text-primary text-base font-normal mt-4">
             You don't have an account yet?{" "}
