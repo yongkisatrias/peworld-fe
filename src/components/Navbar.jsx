@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <>
       <nav className="flex justify-between py-5 px-2">
-        <Image
+        <img
           src="/images/logo/peworld-main.svg"
           alt="logo"
           width={127}
@@ -32,7 +32,12 @@ function Navbar() {
 
         {user ? (
           <div className="flex gap-3">
-            <img src={user?.photo} width={40} className="rounded-full" />{" "}
+            <img
+              src={user?.photo}
+              width={40}
+              className="rounded-full"
+              alt="photo-profile"
+            />{" "}
             <button
               className={`${openSans.className} bg-[#c94747] rounded px-4 text-white text-base`}
               onClick={() => {
