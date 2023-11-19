@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Open_Sans } from "next/font/google";
 import Link from "next/link";
-import { setCookie } from "cookies-next";
+import { setCookie, getCookie } from "cookies-next";
 import axios from "axios";
 
 const openSans = Open_Sans({
@@ -23,8 +23,11 @@ function Login() {
         password: password,
       })
       .then((result) => {
-        setCookie("token", result?.data?.data?.token);
-        setCookie("user", JSON.stringify(result?.data?.data?.user));
+        setCookie("token", result?.data?.data?.token, { maxAge: 60 * 60 * 24 });
+        setCookie(
+          "user",
+          JSON.stringify(result?.data?.data?.user, { maxAge: 60 * 60 * 24 })
+        );
 
         window.location.href = "/";
       })
@@ -133,6 +136,25 @@ function Login() {
       </div>
     </div>
   );
+}
+
+// Change to SSR page
+export async function getServerSideProps({ req, res }) {
+  const user = getCookie("user", { req, res });
+  const token = getCookie("token", { req, res });
+
+  if (user && token) {
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/",
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
 }
 
 export default Login;
