@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Open_Sans } from "next/font/google";
 import { useRouter } from "next/router";
-import { getCookie } from "cookies-next";
+import { getCookie, deleteCookie } from "cookies-next";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -31,7 +31,20 @@ function Navbar() {
         />
 
         {user ? (
-          <img src={user?.photo} width={40} className="rounded-full" />
+          <div className="flex gap-3">
+            <img src={user?.photo} width={40} className="rounded-full" />{" "}
+            <button
+              className={`${openSans.className} bg-[#c94747] rounded px-4 text-white text-base`}
+              onClick={() => {
+                deleteCookie("user");
+                deleteCookie("token");
+                setUser(null);
+                router.reload();
+              }}
+            >
+              Logout
+            </button>
+          </div>
         ) : (
           <div className="flex gap-4">
             <button
