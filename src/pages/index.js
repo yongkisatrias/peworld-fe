@@ -44,7 +44,7 @@ export default function Home() {
             </button>
           </div>
           <div className="col-span-1 md:col-span-1 justify-self-end mb-10">
-            <Image
+            <img
               src="/images/homepage-image/hero-content.png"
               alt="hero-image"
               width={617}
