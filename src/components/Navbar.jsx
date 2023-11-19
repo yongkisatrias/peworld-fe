@@ -16,7 +16,7 @@ function Navbar() {
     if (getCookie("user")) {
       setUser(JSON.parse(getCookie("user")));
     }
-  });
+  }, []);
 
   return (
     <>
