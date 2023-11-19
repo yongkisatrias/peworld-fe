@@ -29,7 +29,7 @@ function ContactPage(props) {
       <section className="bg-[#F6F7F8]">
         <div className="container mx-auto px-2 grid grid-cols-3 gap-16">
           {/* Left section */}
-          <div className="col-span-1 py-12">
+          <div className="md:col-span-1 py-12 hidden md:block">
             <div className="bg-white px-7 pt-5">
               <div className="flex justify-center py-4">
                 <img
@@ -86,11 +86,11 @@ function ContactPage(props) {
           </div>
 
           {/* Right section */}
-          <div className="col-span-2 py-12 grid">
+          <div className="md:col-span-2 col-span-3 py-12 grid">
             <h1 className="text-3xl font-semibold">Contact {data?.fullname}</h1>
             <p className="text-[#46505C] text-lg font-normal mt-2 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              euismod ipsum et dui rhoncus auctor.
+              Please complete all the columns below to contact the talent you
+              want to recruit.
             </p>
             <label
               className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
@@ -153,7 +153,7 @@ function ContactPage(props) {
               type="text"
               rows={5}
             />
-            <button className="bg-[#FBB017] rounded py-3 my-10 text-white text-base font-bold">
+            <button className="bg-[#FBB017] rounded py-3 mt-10 text-white text-base font-bold">
               Send
             </button>
           </div>
