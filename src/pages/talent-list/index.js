@@ -14,8 +14,10 @@ const openSans = Open_Sans({
 
 function TalentList(props) {
   const router = useRouter();
-  const [listData, setListData] = React.useState(props?.data?.slice(0, 4));
-  const [currentPage, setCurrentPage] = React.useState(1);
+  const [listData, setListData] = React.useState([]);
+  const [currentPage, setCurrentPage] = React.useState(
+    parseInt(router?.query?.page ?? 1)
+  );
   const countData = Math.round(props?.data?.length / 4);
   const [searchBar, setSearchBar] = React.useState("");
   const allTalents = props?.data;
@@ -23,12 +25,18 @@ function TalentList(props) {
   const handlePagination = (nextPage) => {
     setCurrentPage(nextPage);
 
+    router.push(`/talent-list?page=${nextPage}`);
+
     if (nextPage > 1) {
       setListData(props?.data?.slice(4 * (nextPage - 1), 4 * nextPage));
     } else {
       setListData(props?.data?.slice(0, 4));
     }
   };
+
+  React.useEffect(() => {
+    handlePagination(currentPage);
+  }, []);
 
   return (
     <>
@@ -202,7 +210,7 @@ function TalentList(props) {
   );
 }
 
-// Merubah menjadi halaman ssr
+// Change to SSR page
 export async function getServerSideProps() {
   const request = await axios.get("http://localhost:3000/api/list-talent");
 
