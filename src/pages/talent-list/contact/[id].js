@@ -18,19 +18,26 @@ function ContactPage(props) {
   const [subject, setSubject] = React.useState("");
   const [senderName, setSenderName] = React.useState("");
   const [description, setDescription] = React.useState("");
+  const [successMessage, setSuccessMessage] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
 
   const handleSend = () => {
-    axios.post(
-      "https://hire-job.onrender.com/v1/contact",
-      {
-        subject: subject,
-        sender: senderName,
-        description: description,
-        toName: data?.fullname,
-        to: data?.socmed?.email,
-      },
-      { headers: { Authorization: `Bearer ${token}` } }
-    );
+    setIsLoading(true);
+    axios
+      .post(
+        "https://hire-job.onrender.com/v1/contact",
+        {
+          subject: subject,
+          sender: senderName,
+          description: description,
+          toName: data?.fullname,
+          to: data?.socmed?.email,
+        },
+        { headers: { Authorization: `Bearer ${token}` } }
+      )
+      .then(() => setSuccessMessage("Email success send to talent"))
+      .catch((err) => err)
+      .finally(() => setIsLoading(false));
   };
 
   return (
@@ -112,6 +119,11 @@ function ContactPage(props) {
               Please complete all the columns below to contact the talent you
               want to recruit.
             </p>
+            {successMessage ? (
+              <div className="bg-[#d1e7dd] text-[#0f5132] px-4 py-3 my-4 rounded">
+                {successMessage}
+              </div>
+            ) : null}
             <label
               className="text-[#9EA0A5] text-sm font-normal mb-2 mt-4"
               htmlFor="purpose"
@@ -155,8 +167,9 @@ function ContactPage(props) {
             <button
               className="bg-[#FBB017] rounded py-3 mt-10 text-white text-base font-bold"
               onClick={handleSend}
+              disabled={isLoading}
             >
-              Send
+              {isLoading ? "Loading..." : "Send"}
             </button>
           </div>
         </div>
