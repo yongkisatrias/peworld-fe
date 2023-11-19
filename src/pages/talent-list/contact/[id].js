@@ -15,6 +15,7 @@ const openSans = Open_Sans({
 function ContactPage(props) {
   const { data } = props;
   const token = getCookie("token");
+
   const [subject, setSubject] = React.useState("");
   const [senderName, setSenderName] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -36,7 +37,7 @@ function ContactPage(props) {
         { headers: { Authorization: `Bearer ${token}` } }
       )
       .then(() => setSuccessMessage("Email success send to talent"))
-      .catch((err) => err)
+      .catch((err) => console.log(err))
       .finally(() => setIsLoading(false));
   };
 
@@ -190,7 +191,7 @@ export async function getServerSideProps({ req, res, params }) {
   const user = getCookie("user", { req, res });
   const token = getCookie("token", { req, res });
 
-  if (!user && token) {
+  if (!user && !token) {
     return {
       redirect: {
         permanent: false,
