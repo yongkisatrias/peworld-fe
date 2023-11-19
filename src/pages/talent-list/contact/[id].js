@@ -3,6 +3,7 @@ import Head from "next/head";
 import axios from "axios";
 import Image from "next/image";
 import { Open_Sans } from "next/font/google";
+import { getCookie } from "cookies-next";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -168,9 +169,21 @@ function ContactPage(props) {
   );
 }
 
-// Merubah menjadi halaman ssr
-export async function getServerSideProps(props) {
-  const { id } = props.params;
+// Change to SSR page
+export async function getServerSideProps({ req, res, params }) {
+  const { id } = params;
+
+  const user = getCookie("user", { req, res });
+  const token = getCookie("token", { req, res });
+
+  if (!user && token) {
+    return {
+      redirect: {
+        permanent: false,
+        destination: `/talent-list/detail/${id}`,
+      },
+    };
+  }
 
   const request = await axios.get(
     `http://localhost:3000/api/list-talent?id=${id}`

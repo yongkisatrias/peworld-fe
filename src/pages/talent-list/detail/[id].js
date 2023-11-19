@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
 import axios from "axios";
+import { getCookie } from "cookies-next";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -14,6 +15,8 @@ const openSans = Open_Sans({
 
 function Detail(props) {
   const { data } = props;
+  const user = getCookie("user") ? JSON.parse(getCookie("user")) : null;
+
   return (
     <>
       <Head>
@@ -71,15 +74,17 @@ function Detail(props) {
                   {data?.desc}
                 </p>
               </div>
-              <div className="flex justify-center my-5">
-                <Link href={`/talent-list/contact/${data?.id}`}>
-                  <button
-                    className={`bg-primary rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
-                  >
-                    Hire
-                  </button>
-                </Link>
-              </div>
+              {user ? (
+                <div className="flex justify-center my-5">
+                  <Link href={`/talent-list/contact/${data?.id}`}>
+                    <button
+                      className={`bg-primary rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
+                    >
+                      Hire
+                    </button>
+                  </Link>
+                </div>
+              ) : null}
               <h2
                 className={`flex justify-center ${openSans.className} text-primary text-xl font-semibold leading-6 my-2`}
               >
