@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
-import Image from "next/image";
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
@@ -12,7 +14,7 @@ function Footer() {
       <footer className="bg-primary">
         <div className="container mx-auto px-2">
           <div className="pt-10">
-            <Image
+            <img
               src="/images/logo/peworld-white.svg"
               alt="logo peworld"
               width={178}

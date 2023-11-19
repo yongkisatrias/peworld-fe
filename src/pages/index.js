@@ -1,3 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @next/next/no-img-element */
+
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";

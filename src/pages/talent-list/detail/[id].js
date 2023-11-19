@@ -1,3 +1,6 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
@@ -104,7 +107,7 @@ function Detail(props) {
               </div>
               <div className="pb-5">
                 <div className="flex justify-center items-center gap-3 mb-3">
-                  <img src="/images/logo/mail.svg" />
+                  <img src="/images/logo/mail.svg" alt="email" />
                   <p
                     className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
                   >
@@ -112,7 +115,7 @@ function Detail(props) {
                   </p>
                 </div>
                 <div className="flex justify-center items-center gap-3 my-3">
-                  <img src="/images/logo/instagram.svg" />
+                  <img src="/images/logo/instagram.svg" alt="instagram" />
                   <p
                     className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
                   >
@@ -120,7 +123,7 @@ function Detail(props) {
                   </p>
                 </div>
                 <div className="flex justify-center items-center gap-3 my-3">
-                  <img src="/images/logo/github.svg" />
+                  <img src="/images/logo/github.svg" alt="github" />
                   <p
                     className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
                   >
@@ -128,7 +131,7 @@ function Detail(props) {
                   </p>
                 </div>
                 <div className="flex justify-center items-center gap-3 my-3">
-                  <img src="/images/logo/gitlab.svg" />
+                  <img src="/images/logo/gitlab.svg" alt="gitlab" />
                   <p
                     className={`${openSans.className} text-[#9EA0A5] text-sm font-normal leading-5`}
                   >

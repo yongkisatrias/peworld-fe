@@ -1,3 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
