@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 
 import React from "react";
-import Image from "next/image";
 import { Open_Sans } from "next/font/google";
 import { useRouter } from "next/router";
 import { getCookie, deleteCookie } from "cookies-next";

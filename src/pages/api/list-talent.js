@@ -11,7 +11,7 @@ const listData = [
     skills: ["HTML", "CSS", "Javascript", "React", "Node.js"],
     desc: "Enthusiastic and detail-oriented web developer with a robust proficiency in both front-end and back-end technologies. Experienced in transforming design concepts into fully functional websites, prioritizing a seamless user experience. Collaborative team player with a track record of success in cross-functional projects. Adept at leveraging HTML, CSS, and JavaScript, along with expertise in popular frameworks like React and Node.js. Demonstrated ability to troubleshoot and optimize code for enhanced site performance. Committed to staying abreast of industry trends and continuously enhancing skills to deliver innovative and high-quality web solutions. Dedicated to contributing technical expertise and creative problems-solving to dynamic development teams.",
     socmed: {
-      email: "Dominictoretto@gmail.com",
+      email: "yongkisatrias@gmail.com",
       instagram: "@Dominictoretto",
       github: "@Dominictoretto",
       gitlab: "@Dominictoretto",

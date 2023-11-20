@@ -4,7 +4,6 @@
 
 import React from "react";
 import { Open_Sans } from "next/font/google";
-import Image from "next/image";
 import Head from "next/head";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -121,7 +120,7 @@ function TalentList(props) {
                         {item?.job}
                       </p>
                       <div className="flex gap-1 mt-1">
-                        <Image
+                        <img
                           src="/images/icon/map-pin.svg"
                           alt="location"
                           width={16}
@@ -167,7 +166,7 @@ function TalentList(props) {
         <div className="flex justify-center gap-2 mt-8">
           {/* Previous */}
           <button className="bg-white border-2 rounded p-2">
-            <Image
+            <img
               src="images/icon/prev.svg"
               alt="previous"
               width={25}
@@ -195,7 +194,7 @@ function TalentList(props) {
 
           {/* Next */}
           <button className="bg-white border-2 rounded p-2">
-            <Image
+            <img
               src="images/icon/next.svg"
               alt="previous"
               width={25}
@@ -216,7 +215,9 @@ function TalentList(props) {
 
 // Change to SSR page
 export async function getServerSideProps() {
-  const request = await axios.get("http://localhost:3000/api/list-talent");
+  const request = await axios.get(
+    "https://peworld-fe-yongki.vercel.app/api/list-talent"
+  );
 
   return {
     props: request.data,

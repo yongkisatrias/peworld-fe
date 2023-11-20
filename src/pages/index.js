@@ -3,7 +3,6 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { Open_Sans } from "next/font/google";
-import Image from "next/image";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -63,7 +62,7 @@ export default function Home() {
       <section className="container mx-auto px-2 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="col-span-1 md:col-span-1">
-            <Image
+            <img
               src="/images/homepage-image/section-1.png"
               alt="section 1"
               width={568}
@@ -84,7 +83,7 @@ export default function Home() {
               "Prioritize the security of candidate data and companies with high security systems.",
             ]?.map((item, key) => (
               <div className="flex gap-x-5 items-center py-5" key={key}>
-                <Image
+                <img
                   src="/images/icon/tick-1.svg"
                   alt="ceklis"
                   width={24}
@@ -122,7 +121,7 @@ export default function Home() {
               <div>
                 {["Java", "Kotlin", "PHP", "Javascript"]?.map((item, key) => (
                   <div className="flex gap-x-5 items-center py-5" key={key}>
-                    <Image
+                    <img
                       src="/images/icon/tick-2.svg"
                       alt="ceklis"
                       width={24}
@@ -140,7 +139,7 @@ export default function Home() {
                 {["Golang", "C++", "Ruby", "10+ Other Languages"]?.map(
                   (item, key) => (
                     <div className="flex gap-x-5 items-center py-5" key={key}>
-                      <Image
+                      <img
                         src="/images/icon/tick-2.svg"
                         alt="ceklis"
                         width={24}
@@ -158,7 +157,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 md:col-span-1 justify-self-end mb-10">
-            <Image
+            <img
               src="/images/homepage-image/section-2.png"
               alt="section 2"
               width={570}

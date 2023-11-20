@@ -3,7 +3,6 @@
 
 import React from "react";
 import { Open_Sans } from "next/font/google";
-import Image from "next/image";
 import Head from "next/head";
 import axios from "axios";
 import { getCookie } from "cookies-next";
@@ -58,7 +57,7 @@ function Detail(props) {
                 {data?.job}
               </p>
               <div className="flex gap-1 justify-center">
-                <Image
+                <img
                   src="/images/icon/map-pin.svg"
                   alt="location"
                   width={16}
@@ -157,7 +156,7 @@ export async function getServerSideProps(props) {
   const { id } = props.params;
 
   const request = await axios.get(
-    `http://localhost:3000/api/list-talent?id=${id}`
+    `https://peworld-fe-yongki.vercel.app/api/list-talent?id=${id}`
   );
 
   return {
