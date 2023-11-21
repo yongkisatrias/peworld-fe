@@ -40,7 +40,7 @@ export default function Home() {
               us now!
             </p>
             <button
-              className={`${openSans.className} bg-primary rounded px-6 py-5 text-white text-base font-bold mt-10`}
+              className={`${openSans.className} bg-primary hover:bg-[#5242a2] rounded px-6 py-5 text-white text-base font-bold mt-10`}
               onClick={() => router.push(`/talent-list/`)}
             >
               Search Talent Now!
@@ -179,7 +179,7 @@ export default function Home() {
             Let's started!
           </h2>
           <button
-            className={`${openSans.className} bg-white rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
+            className={`${openSans.className} bg-white hover:bg-[#f3f6f4] rounded w-[13.125rem] h-[3.94413rem] text-[#796EAF] text-base font-bold leading-5`}
             onClick={() => router.push(`/register/`)}
           >
             Join Now!

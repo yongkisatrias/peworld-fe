@@ -41,7 +41,7 @@ function Navbar() {
               alt="photo-profile"
             />{" "}
             <button
-              className={`${openSans.className} bg-[#c94747] rounded px-4 text-white text-base`}
+              className={`${openSans.className} bg-[#c94747] hover:bg-[#ce5959] rounded px-4 text-white text-base`}
               onClick={() => {
                 deleteCookie("user");
                 deleteCookie("token");
@@ -55,13 +55,13 @@ function Navbar() {
         ) : (
           <div className="flex gap-4">
             <button
-              className={`${openSans.className} border border-[#5e50a1] rounded px-5 text-[#5e50a1] text-sm font-bold`}
+              className={`${openSans.className} border border-[#5e50a1] hover:bg-[#f3f6f4] rounded px-5 text-[#5e50a1] text-sm font-bold`}
               onClick={() => router.push(`/login`)}
             >
               Login
             </button>
             <button
-              className={`${openSans.className} bg-primary rounded px-5 text-white text-sm font-bold`}
+              className={`${openSans.className} bg-primary hover:bg-[#5242a2] rounded px-5 text-white text-sm font-bold`}
               onClick={() => router.push(`/register`)}
             >
               Register

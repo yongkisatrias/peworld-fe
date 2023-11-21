@@ -76,7 +76,7 @@ function TalentList(props) {
               onChange={(item) => setSearchBar(item.target.value)}
             />
             <button
-              className={`${openSans.className} bg-primary rounded px-5 py-2 text-white text-base font-semibold leading-5`}
+              className={`${openSans.className} bg-primary hover:bg-[#5242a2] rounded px-5 py-2 text-white text-base font-semibold leading-5`}
             >
               Search
             </button>
@@ -150,7 +150,7 @@ function TalentList(props) {
                     </div>
                   </div>
                   <button
-                    className={`${openSans.className} md:col-span-1 col-span-1 bg-primary rounded text-white text-base font-semibold leading-5 my-7 py-2`}
+                    className={`${openSans.className} md:col-span-1 col-span-1 bg-primary hover:bg-[#5242a2] rounded text-white text-base font-semibold leading-5 my-7 py-2`}
                     onClick={() =>
                       router.push(`/talent-list/detail/${item?.id}`)
                     }
@@ -181,8 +181,8 @@ function TalentList(props) {
               <button
                 className={`${openSans.className} border-2 rounded p-2 ${
                   increment === currentPage
-                    ? "bg-primary text-white"
-                    : "bg-white"
+                    ? "bg-primary hover:bg-[#5242a2] text-white"
+                    : "bg-white hover:bg-[#f3f6f4]"
                 }`}
                 key={increment}
                 onClick={() => handlePagination(increment)}

@@ -192,7 +192,7 @@ function Register() {
             type="password"
           />
           <button
-            className="bg-[#FBB017] rounded py-3 my-10 text-white text-base font-bold"
+            className="bg-[#FBB017] hover:bg-[#fbb72e] rounded py-3 my-10 text-white text-base font-bold"
             onClick={() => registerHandler()}
             disabled={loading}
           >

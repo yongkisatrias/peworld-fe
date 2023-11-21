@@ -80,7 +80,7 @@ function Detail(props) {
                 <div className="flex justify-center my-5">
                   <Link href={`/talent-list/contact/${data?.id}`}>
                     <button
-                      className={`bg-primary rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
+                      className={`bg-primary hover:bg-[#5242a2] rounded px-20 py-2 ${openSans.className} text-white text-base font-bold leading-5`}
                     >
                       Hire
                     </button>
@@ -151,7 +151,7 @@ function Detail(props) {
   );
 }
 
-// Merubah menjadi halaman ssr
+// Change to SSR page
 export async function getServerSideProps(props) {
   const { id } = props.params;
 
