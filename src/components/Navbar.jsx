@@ -35,7 +35,7 @@ function Navbar() {
         {user ? (
           <div className="flex gap-3">
             <img
-              src={user?.photo}
+              src={user?.photo ?? <img src="/images/avatar/avatar.png" />}
               width={40}
               className="rounded-full"
               alt="photo-profile"
