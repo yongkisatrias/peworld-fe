@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="https://github.com/yongkisatrias/peworld-fe">
-    <img src="https://i.ibb.co/qdWbF5W/logo.png" alt="Peworld-logo" border="0" style="width: 200">
+    <img src="https://i.ibb.co/qdWbF5W/logo.png" alt="Peworld-logo" border="0" style="width: 250">
 </a>
 </div>
 
