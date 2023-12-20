@@ -2,7 +2,7 @@
 
 <div align="center">
 <a href="https://github.com/yongkisatrias/peworld-fe">
-    <img src="https://i.ibb.co/qdWbF5W/logo.png" alt="Peworld-logo" border="0" style="width: 250">
+    <img src="https://i.ibb.co/qdWbF5W/logo.png" alt="Peworld-logo" border="0" style="width: 350">
 </a>
 </div>
 
@@ -14,6 +14,7 @@
 - [Demo](#demo)
 - [Screenshot project](#screenshot-project)
 - [Contact](#contact)
+- [Related Project](#related-project)
 
 ## About Project
 
@@ -84,3 +85,9 @@ Contributions are the cornerstone of the open source community, turning it into 
 4. Push to the Branch (`git push origin feature/yourbranch`)
 5. Open a Pull Request
 ```
+
+## Related Project
+
+🚀 [`Demo Peworld`](https://peworld-fe-yongki.vercel.app/)
+
+🚀 [`Peworld Backend`](https://hire-job.onrender.com/)
