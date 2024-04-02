@@ -26,7 +26,6 @@ Peworld is a dedicated platform designed for recruiters seeking top-tier talent 
 - [**Cookies Next 4.1.0**](https://www.npmjs.com/package/cookies-next)
 - [**Next 14.0.1**](https://nextjs.org/docs/getting-started/installation)
 - [**React 18**](https://react.dev/learn/start-a-new-react-project)
-- [**React DOM 18**](https://www.npmjs.com/package/react-dom)
 - [**Sass 1.69.5**](https://sass-lang.com/install/)
 - [**Tailwind CSS 3.3.0**](https://tailwindui.com/documentation#react-installing-dependencies)
 
@@ -53,17 +52,7 @@ password: test1234
 
 ## Screenshot Project
 
-|                      Homepage                      |                      Register Page                      |                    Login Page                     |
-| :------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------: |
-| ![Homepage](https://i.ibb.co/sJtMx9J/homepage.png) | ![Register Page](https://i.ibb.co/fvypjxh/register.png) | ![Login Page](https://i.ibb.co/hFtJ0w2/login.png) |
-
-|                       Talent List                        |                       Search Talent Name                        |                        Search Talent Skill                        |
-| :------------------------------------------------------: | :-------------------------------------------------------------: | :---------------------------------------------------------------: |
-| ![Talent List](https://i.ibb.co/r5pFL50/talent-list.png) | ![Search Talent Name](https://i.ibb.co/nnnh8x8/search-name.png) | ![Search Talent Skill](https://i.ibb.co/qxnhjcG/search-skill.png) |
-
-|                         Talent Profile                         |                           Talent Contact Form                            |                       Talent Mail                        |
-| :------------------------------------------------------------: | :----------------------------------------------------------------------: | :------------------------------------------------------: |
-| ![Talent Profile](https://i.ibb.co/kS1WFbT/talent-profile.png) | ![Talent Contact Form](https://i.ibb.co/252Qgm4/talent-contact-form.png) | ![Talent Mail](https://i.ibb.co/gDqz4tC/talent-mail.png) |
+<img src="https://i.ibb.co/CMrrJhv/Peworld.png" alt="Peworld" border="0">
 
 ## Contact
 
@@ -88,6 +77,8 @@ Contributions are the cornerstone of the open source community, turning it into 
 
 ## Related Project
 
-🚀 [`Demo Peworld`](https://peworld-fe-yongki.vercel.app/)
-
 🚀 [`Peworld Backend`](https://hire-job.onrender.com/)
+
+Or, you can see other projects on my personal portfolio website.
+
+🚀 [`My Web Portfolio`](https://yongki-portfolio.vercel.app/)
