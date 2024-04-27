@@ -20,6 +20,14 @@
 
 Peworld is a dedicated platform designed for recruiters seeking top-tier talent to join their companies. Our website provides a seamless experience for recruiters to discover and connect with skilled professionals who are ready to contribute to their organizations. Whether you're in search of experienced individuals or rising stars in various industries, Peworld streamlines the recruitment process, making it easier than ever to find the perfect match for your company's needs. Join Peworld today and unlock a world of talent to elevate your team and drive success.
 
+### Feature
+
+- Login & Register: Easily join Peworld by creating an account. Logging in grants access to exclusive features such as contacting talent.
+
+- Search Talent: Find candidates by name or required skills by recruiters.
+
+- Contact Talent: Contact your desired candidate via Peword, which will be sent directly to the candidate's personal email. This feature is available once you have a Peworld account.
+
 ## Built with
 
 - [**Axios 1.6.1**](https://www.npmjs.com/package/axios)
