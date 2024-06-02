@@ -21,7 +21,7 @@ export default function Home() {
         <title>Peworld | Home</title>
       </Head>
       {/* Header start */}
-      <header className="container mx-auto px-2">
+      <header className="container mx-auto px-4 lg:px-9">
         {/* Navbar */}
         <Navbar />
         {/* Hero Content */}
@@ -59,7 +59,7 @@ export default function Home() {
       {/* Header end */}
 
       {/* Section 1 */}
-      <section className="container mx-auto px-2 mt-16">
+      <section className="container mx-auto px-4 lg:px-9 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="col-span-1 md:col-span-1">
             <img
@@ -102,7 +102,7 @@ export default function Home() {
       {/* Section 1 end */}
 
       {/* Section 2 */}
-      <section className="container mx-auto px-2 mt-16">
+      <section className="container mx-auto px-4 lg:px-9 mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="col-span-1 md:col-span-1 md:order-first order-last ">
             <h2
@@ -169,7 +169,7 @@ export default function Home() {
       {/* Section 2 end */}
 
       {/* CTA */}
-      <section className="container mx-auto px-2 my-24 flex justify-center sm:w-[100%]">
+      <section className="container mx-auto px-4 lg:px-9 my-24 flex justify-center sm:w-[100%]">
         <div className="flex justify-around flex-wrap bg-primary rounded-tl-3xl rounded-br-3xl w-[71.25rem] h-[14.1875rem] items-center px-5">
           <h2
             className={`${openSans.className} text-white text-2xl font-semibold leading-10 md:text-4xl`}

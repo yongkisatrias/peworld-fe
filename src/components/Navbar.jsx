@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-between py-5 px-2">
+      <nav className="flex justify-between py-5 px-4 lg:px-9">
         <img
           src="/images/logo/peworld-main.svg"
           alt="logo"

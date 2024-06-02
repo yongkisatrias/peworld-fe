@@ -12,7 +12,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-primary">
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto px-4 lg:px-9">
           <div className="pt-10">
             <img
               src="/images/logo/peworld-white.svg"

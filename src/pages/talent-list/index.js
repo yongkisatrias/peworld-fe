@@ -55,7 +55,7 @@ function TalentList(props) {
 
       {/* Sub Header */}
       <section className="bg-primary">
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto px-4 lg:px-9">
           <h1
             className={`${openSans.className} text-2xl font-bold leading-5 text-white py-5`}
           >
@@ -67,7 +67,7 @@ function TalentList(props) {
 
       {/* Main Section */}
       <main className="bg-[#F6F7F8] py-8">
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto px-4 lg:px-9">
           {/* Search Bar */}
           <div className="bg-white drop-shadow-[0_1px_20px_rgba(197,197,197,0.25)] flex justify-between p-4 rounded-lg gap-4">
             <input

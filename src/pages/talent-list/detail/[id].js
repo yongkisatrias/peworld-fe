@@ -33,7 +33,7 @@ function Detail(props) {
 
       {/* Main Section */}
       <main className="bg-[#F6F7F8] py-8">
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto px-4 lg:px-9">
           <div className="bg-white drop-shadow-lg rounded-t-lg">
             <div className="bg-primary h-[200px] rounded-t-lg" />
             <div className="flex justify-center mt-[-80px]">

@@ -49,7 +49,7 @@ function ContactPage(props) {
         <title>Peworld | Contact</title>
       </Head>
       {/* Header start */}
-      <header className="container mx-auto px-2">
+      <header className="container mx-auto px-4 lg:px-9">
         {/* Navbar */}
         <Navbar />
       </header>
@@ -57,7 +57,7 @@ function ContactPage(props) {
 
       {/* Main section */}
       <section className="bg-[#F6F7F8]">
-        <div className="container mx-auto px-2 grid grid-cols-3 gap-16">
+        <div className="container mx-auto px-4 lg:px-9 grid grid-cols-3 gap-16">
           {/* Left section */}
           <div className="md:col-span-1 py-12 hidden md:block">
             <div className="bg-white px-7 pt-5">
