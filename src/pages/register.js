@@ -26,7 +26,7 @@ function Register() {
     setLoading(true);
     axios({
       method: "post",
-      url: `https://hire-job.onrender.com/v1/auth/register`,
+      url: `https://hire-job-be.vercel.app/v1/auth/register`,
       data: {
         email: email,
         password: password,

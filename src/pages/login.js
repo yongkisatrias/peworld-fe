@@ -22,7 +22,7 @@ function Login() {
   const handleLogin = () => {
     setIsLoading(true);
     axios
-      .post("https://hire-job.onrender.com/v1/auth/login", {
+      .post("https://hire-job-be.vercel.app/v1/auth/login", {
         email: email,
         password: password,
       })

@@ -85,7 +85,7 @@ Contributions are the cornerstone of the open source community, turning it into 
 
 ## Related Project
 
-🚀 [`Peworld Backend`](https://hire-job.onrender.com/)
+🚀 [`Peworld Backend`](https://hire-job-be.vercel.app/v1/)
 
 Or, you can see other projects on my personal portfolio website.
 

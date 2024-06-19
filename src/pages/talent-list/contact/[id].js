@@ -28,7 +28,7 @@ function ContactPage(props) {
     setIsLoading(true);
     axios
       .post(
-        "https://hire-job.onrender.com/v1/contact",
+        "https://hire-job-be.vercel.app/v1/contact",
         {
           subject: subject,
           sender: senderName,
