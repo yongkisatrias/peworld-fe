@@ -1,10 +1,12 @@
 # Peworld - Front End
 
-<div align="center">
+<!-- <div align="center">
 <a href="https://github.com/yongkisatrias/peworld-fe">
-    <img src="https://i.ibb.co/qdWbF5W/logo.png" alt="Peworld-logo" border="0" style="width: 350">
+    <img src="https://i.postimg.cc/BvN8GgqN/peworld-logo.png" alt="Peworld-logo" border="0" style="width: 350">
 </a>
-</div>
+</div> -->
+
+![peworld-logo](https://github.com/user-attachments/assets/71fb2097-313b-4582-88ad-fe34d7798a98)
 
 ## Table of Contents
 
@@ -60,7 +62,9 @@ password: test1234
 
 ## Screenshot Project
 
-<img src="https://i.ibb.co/CMrrJhv/Peworld.png" alt="Peworld" border="0">
+<!-- <img src="https://i.postimg.cc/13QcmvQZ/Peworld.png" alt="Peworld" border="0"></div> -->
+
+![Peworld](https://github.com/user-attachments/assets/4612bfda-fb1c-4b6d-8b4d-0e77bfac954f)
 
 ## Contact
 
